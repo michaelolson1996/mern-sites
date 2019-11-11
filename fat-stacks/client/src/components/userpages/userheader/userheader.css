@@ -1,0 +1,18 @@
+.button-logout {
+    color:white;
+    width:80px;
+    height:32px;
+    background-color: rgba(255, 255, 255, 0.4);
+    text-transform:uppercase;
+    font-weight:bold;
+    border:none;
+    position:absolute;
+    top:8px;
+    right:20px;
+
+}
+
+.button-logout:hover {
+    border:1px solid white;
+    cursor:pointer;
+}

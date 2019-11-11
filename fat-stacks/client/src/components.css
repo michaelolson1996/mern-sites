@@ -1,0 +1,91 @@
+
+/* 
+                                    HEADER
+*/
+
+.header {
+    height: 258px;
+    width:100%;
+    background-color:black;
+}
+
+.logo {
+
+}
+
+/*
+                                    NAVBAR
+*/
+
+.navbar-container {
+
+}
+
+.navbar-ul {
+
+}
+
+.navbar-li {
+
+}
+
+.links {
+
+}
+
+/*
+                                    NEW_CARD_BUTTON
+*/
+
+.new-card-button {
+
+}
+
+/*
+                                    CARD_FORM
+*/
+
+.new-card-form {
+
+}
+
+.term-input {
+
+}
+
+.phrase-input {
+
+}
+
+.make-card-button {
+
+}
+
+.exit-card-button {
+
+}
+
+/*
+                                    CARD
+*/
+
+.card {
+
+}
+
+/*
+                                    DECK_DISPLAYS
+*/
+
+.deck-grid-container {
+    height:auto;
+    width:100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows:200px;
+}
+
+.deck-displays {
+    height:80px;
+    width:300px;
+}
