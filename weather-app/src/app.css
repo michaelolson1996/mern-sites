@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css?family=Varela+Round');
+
+* {
+    font-family: 'Varela Round';
+    box-sizing: border-box;
+}
+
+h1 {
+    margin:0;
+}
+
+p {
+    margin: 10px;
+}
+
+.app-content {
+    height:100vh;
+    width:100vw;
+    position:absolute;
+    top:0;
+    left:0;
+    min-height:750px;
+}
+
+.title-wrap {
+    height:80px;
+    width:100%;
+    text-align:center;
+    margin-top:30px;
+}
+
+.form {
+    height:100px;
+    width:100%;
+    display:flex;
+    flex-wrap: wrap;
+    align-items:center;
+    justify-content:center;
+    /* margin-top:20px; */
+}
+
+input {
+    margin:5px;
+    width:200px;
+    height:35px;
+    border-radius:5px;
+    border:1px solid rgb(25, 25, 25);
+    padding-left:5px;
+    font-size:1em;
+}
+
+input::placeholder {
+    text-transform:uppercase;
+    text-align:center;
+    padding-right:10px;
+}
+
+button {
+    height:35px;
+    margin-left:10px;
+    border-radius:5px;
+    border:0px;
+    background-color:rgb(25, 25, 25);
+    color:white;
+    font-weight:bold;
+    border:1px solid transparent;
+}
+
+button:hover {
+    background-color:white;
+    color:rgb(25, 25, 25);
+    border: 1px solid rgb(25, 25, 25);
+    cursor:pointer;
+}
+
+.earth-container {
+    position:absolute;
+    top:0;
+    left:0;
+    height:92vh;
+    width:100vw;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    z-index:-1000;
+    min-height:720px;
+}
+
+.earth {
+    height:300px;
+    width:300px;
+    background: url('./media/earthmap.jpg') 0 0 repeat;
+    border-radius:50%;
+    background-size:630px;
+    animation: rotate 40s linear infinite;
+    transition: transform 200ms linear;
+    transform-style: preserve-3d;
+    box-shadow: inset 20px 0 60px 6px rgba(0, 0, 0, .8);
+    color: black;
+    border:2px solid rgb(25, 25, 25);
+}
+
+@keyframes rotate {
+    0% {background-position: 0 0;}
+    100% {background-position: 630px 0;}
+}
+
+.weather-container {
+    position: absolute;
+    height:220px;
+    width:400px;
+    bottom:20px;
+    left:50%;
+    transform: translateX(-50%);
+    /* border: 1px solid rgb(25, 25, 25); */
+    border-radius:5px;
+    padding-left:5px;
+}
+
+.main-title {
+    width:101%;
+    height:30px;
+    /* background-color:red; */
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position:relative;
+    top:-23px;
+    /* left:29%; */
+    right:5px;
+}
+
+.title-city-country {
+    margin:0;
+    font-weight:bold;
+    font-size:1.2em;
+}
+
+.temp-container {
+    height:30px;
+    width:101%;
+    /* background-color:red; */
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position:relative;
+    top:-20px;
+    right:5px;
+
+}
+
+.temp-titles {
+    /* display:inline; */
+    font-family: "Varela Round";
+    margin:0;
+}
+
+.temp-spacing {
+    width:10px;
+    height:1px;
+}
+
+.fas {
+    color:rgb(25, 25, 25);
+    font-size:2em;
+    position:relative;
+    left:79%;
+    top:8px;
+}
+
+.humid-container {
+    height:20px;
+    width:101%;
+    /* background-color:red; */
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position:relative;
+    right:5px;
+    top:-15px;
+}
+
+.fa-tint {
+    font-size: 1em;
+    position: static;
+}
+
+.long-lat-container {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:20px;
+    width:100%;
+    /* background-color:red; */
+}
