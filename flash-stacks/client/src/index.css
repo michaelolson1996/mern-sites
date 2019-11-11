@@ -1,0 +1,30 @@
+*,
+*:after,
+*::before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  overflow-x: hidden;
+}
+
+:root {
+  --lightgrey:rgb(238, 235, 229);
+  --darkgrey:rgb(157, 154, 150);
+  --blue:rgb(175, 220, 230);
+}
+
+input {
+  border: none;
+  outline: none;
+}
+
+::-webkit-scrollbar {
+  display:none;
+}

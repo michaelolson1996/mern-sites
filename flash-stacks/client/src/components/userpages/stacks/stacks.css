@@ -1,0 +1,164 @@
+.outer-shell {
+    /* position:fixed; */
+    height:100%;
+    width:100%;
+    top:0;
+    left:0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background: #ff00cc;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #333399, #ff00cc);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #333399, #ff00cc); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.page-container {
+    position:absolute;
+    background: #ff00cc;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #333399, #ff00cc);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #333399, #ff00cc); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    height:92.7vh;
+    width:100%;
+    height:100%;
+    padding-top:50px;
+}
+
+/* .background-cover {
+    position:fixed;
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+    background-color: white;
+    z-index:-1;
+
+} */
+
+.stacks-page-container {
+    display:grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: auto;
+    grid-gap:20px;
+    /* margin-left:59px;
+    margin-right:59px; */
+    /* margin:auto; */
+    margin-top:5px;
+    width:100%;
+    padding-bottom:20px;
+    background: #ff00cc;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #333399, #ff00cc);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #333399, #ff00cc); 
+}
+
+.deck-grid-container {
+    display:flex;
+    justify-content:space-around;
+}
+
+.deck-grid-container:hover {
+    cursor:pointer;
+}
+
+.deck-box {
+    height:170px;
+    width:220px;
+    text-align:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-radius: 1px;
+    font-size: 1.6em;
+    background-color:white;
+    color:black;
+    font-family:Poppins;
+}
+
+.deck-container {
+    background-color:white;
+    border:none;
+}
+
+.deck-container:hover {
+    cursor:pointer;
+}
+
+.subject-words {
+    text-decoration:none;
+    color:black;
+}
+
+.subject-words:hover {
+    cursor:pointer;
+}
+
+.stack-buttons-container {
+    height:100px;
+    width:95%;
+    /* background-color:black; */
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+}
+
+.stack-delete-button {
+    height:50px;
+    margin-left: 10px;
+}
+
+.stack-delete-button:hover {
+    cursor:pointer;
+}
+
+.stack-make-button:hover {
+    cursor:pointer;
+}
+
+.stack-make-button {
+    /* z-index:-1; */
+    height:50px;
+}
+
+.form-make-stack {
+    position:fixed;
+    top:200px;
+    height:300px;
+    width:400px;
+    background-color:var(--lightgrey);
+    z-index:1;
+}
+
+@media only screen and (max-width:1300px) {
+    .stacks-page-container {
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap:15px;
+        grid-row-gap: 25px;
+    }
+}
+
+@media only screen and (max-width:1030px) {
+    .stacks-page-container {
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap:15px;
+        grid-row-gap: 25px;
+    }
+}
+
+@media only screen and (max-width:800px) {
+    .stacks-page-container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap:15px;
+        grid-row-gap: 25px;
+    }
+}
+
+@media only screen and (max-width:500px) {
+    .stacks-page-container {
+        grid-template-columns:1fr;
+        grid-gap:15px;
+        grid-row-gap: 25px;
+    }
+
+    .stack-buttons-container {
+        width:100%;
+        justify-content:center;
+    }
+}

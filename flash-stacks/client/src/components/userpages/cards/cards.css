@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css?family=Kavivanar');
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+
+.home-background {
+    height:100%;
+    width: 100%;
+    position: absolute;
+    z-index:-5;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    overflow:hidden;
+    top:0;
+    background: #ff00cc;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #333399, #ff00cc);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #333399, #ff00cc); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.card-and-buttons {
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index:-3;
+}
+
+.card {
+    height:370px;
+    width:550px;
+    border:none;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    z-index:-7;
+    background-color:white;
+}
+
+.front-word-container {
+    text-align: center;
+    margin:0;
+    font-size: 3em;
+}
+
+.back-word-container {
+    width:80%;
+    margin:0;
+    text-align:center;
+    height: 300px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:1.3em;
+}
+
+.card-text-container {
+    margin: auto;
+    width: 100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.form-background-container {
+    position: absolute;
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    z-index: 10;
+}
+
+.form-background-home {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height:100vh;
+    width:100%;
+    background-color:white;
+    z-index: 10;
+    background: #ff00cc;
+    background: -webkit-linear-gradient(to right, #333399, #ff00cc);
+    background: linear-gradient(to right, #333399, #ff00cc);
+}
+
+.new-card-form {
+    position: absolute;
+    z-index: 10;
+    height:auto;
+    width:300px;
+    display:flex;
+    flex-direction:column;
+
+}
+
+.card-front-input {
+    height:200px;
+    width:300px;
+    background-color:white;
+    resize:none;
+    outline-color: #A20EBF;
+}
+
+.card-back-input {
+    height:200px;
+    width:300px;
+    background-color:white;
+    resize:none;
+    outline-color: #A20EBF;
+}
+
+.form-buttons {
+    width:100px;
+    margin: auto;
+    height:50px;
+    background-color:none;
+    color:black;
+    letter-spacing:1px;
+}
+
+.form-buttons:hover {
+    cursor:pointer;
+}
+
+.toggle-buttons {
+    background-color: Transparent;
+    border: Transparent;
+    font-size:5em;
+    font-family: Poppins;
+    color: var(--lightgrey);
+    margin:1em;
+    color:#A20EBF;
+}
+
+.toggle-buttons:hover {
+    color:var(--lightgrey);
+    cursor:pointer;
+}
+
+#rotate {
+    position: absolute;
+    top:70px;
+    right:31px;
+    color:#A20EBF;
+    font-size: 1.4em;
+}
+
+#rotate:hover {
+    color:var(--lightgrey);
+    opacity:1;
+    cursor: pointer;
+}
+
+.fa-cog {
+    -moz-transition: transform  ease .6s;
+    -webkit-transition: transform  ease .6s;
+    transition: transform  ease .6s;
+  }
+  
+  .flip {
+    transform: rotate(-90deg);
+    /* transition: transform ease .5s; */
+  }
+
+  .flip-back {
+      transform: rotate(0deg);
+      /* transition: transform ease .5s; */
+  }
+
+.menu-container {
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+    position:absolute;
+    right:-260px;
+    top:120px;
+    width:80px;
+    height:130px;
+    transition: ease 1.5s;
+    color:#A20EBF;
+}
+
+.menu-toggle:checked ~ .menu-container {
+    right:-30px;
+    top:105px;
+}
+
+.menu-toggle:checked ~ .buttons {
+    opacity:1;
+    transition: ease 1s;
+}
+
+.menu-toggle {
+    display:none;
+}
+
+.tooltip {
+    font-weight:bolder;
+    font-size:1.4em;
+}
+  
+.tooltip-text {
+    position:absolute;
+    right:90px;
+    width:80px;
+    height:20px;
+    color:white;
+    text-align:center;
+    border-radius:6px;
+    font-size:.5em;
+    font-weight:800;
+    letter-spacing: 1px;
+    text-transform:uppercase;
+    visibility:hidden;
+    padding:3.7px;
+    padding-top:3px;
+    font-family:Poppins;
+}
+
+.tooltip:hover {
+    cursor:pointer;
+    color:var(--lightgrey);
+}
+
+.tooltip:hover .tooltip-text {
+    visibility: visible;
+}
