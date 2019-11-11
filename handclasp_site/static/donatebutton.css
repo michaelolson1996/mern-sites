@@ -1,0 +1,23 @@
+.button_donations {
+    background-color: transparent;
+    color:white;
+    border: 0px;
+    width:220px;
+    cursor:pointer;
+    position: static;
+}
+
+.donate_button_container {
+    position:absolute;
+    bottom:100px;
+    display:flex;
+    justify-content: flex-start;
+}
+
+.button_donations:hover rect {
+    stroke-dasharray: 15, 400;
+}
+
+.donate_rect {
+    stroke: white;
+}

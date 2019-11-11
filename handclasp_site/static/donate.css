@@ -1,0 +1,478 @@
+.donate-wrap {
+    height:auto;
+    width:100vw;
+}
+
+.donate-page-1 {
+    height:100vh;
+    min-height:620px;
+    width:100%;
+    background-color:var(--blue);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.braintree-show-options {
+    width:500px;
+}
+
+/* .braintree-options-list {
+    height:auto;
+    overflow:auto;
+}
+.braintree-dropin {
+    height:320px;
+} */
+
+/* .braintree-option__card {
+    z-index:1000;
+} */
+
+svg {
+    display: none;
+}
+
+/* .braintree-show-paypalCredit .braintree-paypalCredit {
+    display:none;
+} */
+
+.donate-form-bg {
+    height:100vh;
+    width:100vw;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+}
+
+.donate-options-container {
+    height:55%;
+    width:80%;
+    margin:20px;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    align-items:center;
+    overflow:hidden;
+}
+
+.donation-options-inside-container {
+    height:auto;
+    width:25%;
+    min-width:200px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.donation-options-circles {
+    height:150px;
+    width:150px;
+    border-radius:50%;
+    border:2px solid white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:white;
+    transition:all .4s cubic-bezier(0.075, 0.82, 0.165, 1);
+    cursor:pointer;
+    text-decoration:none;
+}
+
+.donate-circles-inner-text {
+    font-size:1.6em;
+    opacity:1;
+}
+
+.donation-options-circles:hover {
+    height:176px;
+    width:176px;
+    border: 6px solid transparent;
+}
+
+.button-donations {
+    background-color: transparent;
+    color:white;
+    border: 0px;
+    width:220px;
+    cursor:pointer;
+    position: static;
+}
+
+.donate-button-container {
+    position:absolute;
+    bottom:100px;
+    display:flex;
+    justify-content: flex-start;
+}
+
+.button-donations:hover rect {
+    stroke-dasharray: 15, 400;
+}
+
+.donate-rect {
+    stroke: white;
+}
+
+.donate-section-2-container {
+    height:auto;
+    width:100vw;
+}
+
+.donation-info-2-container {
+    width:100%;
+    height:auto;
+    margin:auto;
+    text-align:center;
+    letter-spacing:1px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.donation-page-title-container {
+    height:auto;
+    width:100%;
+    max-width: 700px;
+    min-width:370px;
+    margin-top:100px;
+    margin-bottom:50px;
+}
+
+.donate-procedure {
+    margin-top:28px;
+}
+
+.donations-2-main-title-first {
+    margin-bottom:15px;
+}
+
+.donations-2-main-title {
+    margin-top:15px;
+    margin-bottom:15px;
+    text-transform: uppercase;
+}
+
+.donate-images {
+    height:400px;
+    width:534px;
+    background-size:cover;
+    background-repeat:no-repeat;
+    margin:auto;
+    border:3px solid var(--blue);
+}
+
+.image-1 {
+    background-image:url('./images/donate_image_1.jpg');
+}
+
+.image-2 {
+    background-image:url('./images/donate_image_2.jpg');
+}
+
+.image-3 {
+    background-image:url('./images/donate_image_3.jpg');
+}
+
+.image-4 {
+    background-image:url('./images/donate_image_4.jpg');
+}
+
+.image-5 {
+    background-image: url('./images/donate_image_5.jpg')
+}
+
+.image-6 {
+    background-image: url('./images/donate_image_6.jpg')
+}
+
+.image-7 {
+    background-position-x: -40px;
+    background-image:url('./images/donate_image_7.jpg')
+}
+
+.image-8 {
+    background-position-x: -60px;
+    background-image:url('./images/donate_image_8.jpg')
+}
+
+.image-9 {
+    background-position-x: -40px;
+    background-image:url('./images/donate_image_9.jpg');
+}
+
+.image-10 {
+    background-image:url('./images/donate_image_10.jpg');
+}
+
+.donation-section-container {
+    width:100%;
+    height:auto;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-wrap: wrap;
+    margin-top:100px;
+    margin-bottom:100px;
+}
+
+.donation-section-image-container {
+    width:600px;
+}
+
+.donation-section-text-container {
+    width:420px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+@media only screen and (max-width:1250px) {
+    .donate-images {
+        height:300px;
+        width:434px;
+    }
+
+    .donation-section-container {
+        width:900px;
+    }
+    
+    .donation-section-image-container {
+        width:500px;
+    }
+    
+    .donation-section-text-container {
+        width:400px;
+    }
+}
+
+@media only screen and (max-width:970px) {
+    .donate-images {
+        height:300px;
+        width:434px;
+    }
+
+    .donation-section-container {
+        flex-direction: column;
+        margin-top:60px;
+        margin-bottom:60px;
+    }
+
+    .donation-section-text-container {
+        width:520px;
+    }
+}
+
+@media only screen and (max-height:800px) {
+    .donate-button-container {
+        bottom:50px;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    .donate-images {
+        height:240px;
+        width:360px;
+    }
+
+    .donation-section-container {
+        flex-direction: column;
+        margin-top:60px;
+        margin-bottom:60px;
+    }
+
+    .donation-section-text-container {
+        width:380px;
+    }
+}
+
+@media only screen and (max-width:515px) {
+    .donate-options-container {
+        height:65%;
+        top:100px;
+    }
+
+    .donation-options-inside-container {
+        height:auto;
+        width:25%;
+        min-width:200px;
+    }
+    
+    .donation-options-circles {
+        height:100px;
+        width:100px;
+        position:absolute;
+    }
+
+    .donation-options-circles:hover {
+        height:120px;
+        width:120px;
+    }
+
+    .donate-button-container {
+        bottom:50px;
+    }
+}
+
+@media only screen and (max-width:420px) {
+
+    .donation-page-title-container p {
+        width:320px;
+        margin:auto;
+    }
+
+    .donate-images {
+        height:200px;
+        width:300px;
+    }
+
+    .donation-section-container {
+        flex-direction: column;
+        margin-top:60px;
+        margin-bottom:60px;
+    }
+
+    .donation-section-text-container {
+        width:300px;
+    }
+
+    .image-8 {
+        background-position-x:-10px;
+    }
+
+    .image-9 {
+        background-position-x:0px;
+
+    }
+}
+
+/* ----------- iPad 1, 2, Mini and Air ----------- */
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 767px) 
+  and (max-device-width: 1023px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .donate-options-container {
+        position:absolute;
+        height:800px;
+        flex-direction:column;
+        width:100%;
+    }
+
+    .donation-page-title-container p {
+        width:600px;
+        margin:auto;
+    }
+
+    .donate-button-container {
+        bottom:30px;
+    }
+}
+
+/* ----------- iPhone 4 and 4S ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+
+}
+
+/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+
+    .donate-options-container {
+        height:74%;
+        position:absolute;
+        top:56px;
+    }
+    
+    .donation-options-circles {
+        height:90px;
+        width:90px;
+    }
+
+    .donation-options-circles:hover {
+        height:100px;
+        width:100px;
+    }
+
+    .donation-page-title-container p {
+        width:80%;
+        margin:auto;
+    }
+
+    .donate-button-container {
+        bottom:15px;
+    }
+}
+
+/* ----------- iPhone 6, 7, 8 ----------- */
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+
+    .donate-options-container {
+        top:54px;
+    }
+
+    .donate-button-container {
+        bottom:25px;
+    }
+  }
+
+  /* ----------- Pixel2 XL ----------- */
+
+  /* Portrait */
+  @media only screen 
+   and (min-device-width: 410px) 
+   and (max-device-width: 822px)
+   and (-webkit-min-device-pixel-ratio: 3.5)
+   and (orientation: portrait) {
+    .donate-options-container {
+        top:74px;
+    }
+
+    .donate-button-container {
+        bottom:40px;
+    }
+  }

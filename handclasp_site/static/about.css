@@ -1,0 +1,544 @@
+.about-section-1-content-container {
+    width:100%;
+    height:1400px;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+    align-items:center;
+}
+
+.about-2-container-1 {
+    height:360px;
+    width:760px;
+    box-shadow:5px 4px 12px rgba(8, 8, 8, 0.588);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-radius:15px;
+}
+
+.about-2-picture-container-1 {
+    height:360px;
+    width:760px;
+    background-image: url('../../media/tete.webp');
+    background-size: 1000px 500px;
+    background-position-x: -300px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:15px;
+}
+
+.stylized-bg {
+    height:360px;
+    width:760px;
+    position:relative;
+    background-image:linear-gradient(-102deg,rgb(51, 201, 89) calc(515px / 1.27),rgba(0,0,0,0) 0);
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+    color:white;
+}
+
+.stylized-bg-2 {
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+    height:360px;
+    width:760px;
+    background-image:linear-gradient(-78.5deg,rgb(51, 111, 201) calc(515px / 1.27),rgba(0,0,0,0) 0);
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+    color:white;
+}
+
+.stylized-bg-3 {
+    height:360px;
+    width:760px;
+    background-image:linear-gradient(-102deg,rgb(201, 51, 193) calc(515px / 1.27),rgba(0,0,0,0) 0);
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+    color:white;
+}
+
+.content-container {
+    width:360px;
+    padding:10px;
+    text-align:center;
+    letter-spacing:1px;
+}
+
+.about-title {
+    margin-bottom:5px;
+}
+
+.about-2-picture-container-2 {
+    height:360px;
+    width:760px;
+    background-image: url('../../media/father_and_son.jpg');
+    background-size:480px 360px;
+    background-position:right;
+    background-repeat: no-repeat;
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+}
+
+.about-2-picture-container-3 {
+    height:360px;
+    width:760px;
+    background-image: url('../../media/karen_girls.jpg');
+    background-size: 520px 400px;
+    background-position-x:-100px;
+    background-repeat: no-repeat;
+}
+
+.about-section-2-container {
+    height:100vh;
+    /* min-height:800px; */
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    letter-spacing:1px;
+}
+
+.about-section-2-title {
+    font-weight:600;
+}
+
+.about-section-2-paragraph {
+    width:780px;
+    text-align:center;
+    line-height: 1.6em;
+    margin-top:15px;
+}
+
+.about-section-3-container {
+    width:100%;
+    height:auto;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+}
+
+.about-section-3-title {
+    margin-top:200px;
+    margin-bottom:50px;
+}
+
+.member-container {
+    margin-top:15px;
+    margin-bottom:15px;
+    height:300px;
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+    align-items:center;
+}
+
+.member-line-2 {
+    flex-direction:row;
+    justify-content:space-around;
+    align-items:center;
+    width:78%;
+    height:auto;
+    flex-wrap:wrap;
+}
+
+.member-image {
+    height:250px;
+    width: 250px;
+    border-radius:50%;
+    border: 4px solid #008CBA;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    transition: opacity .2s ease-in-out;
+}
+
+.image-inner-text {
+    font-weight:bold;
+    letter-spacing:1px;
+    font-size:1.3em;
+    position:absolute;
+    opacity:0;
+    transition: all .2s ease-in-out;
+    color:white;
+}
+
+.row-2-about-containers:hover .image-inner-text {
+    opacity:1;
+}
+
+.don-and-kay-image:hover .image-inner-text {
+    opacity:1;
+}
+
+.row-2-about-containers {
+    display:flex;
+    height:300px;
+    flex-direction:column;
+    justify-content:space-around;
+    align-items:center;
+    width:300px;
+}
+
+.row-2-about-containers:hover {
+    cursor:pointer;
+}
+
+.siami-image {
+    background-image: url('../../media/siaminew.jpg');
+    background-size:cover;
+    background-position: left;
+}
+
+.laechaeh-image {
+    background-image: url('../../media/lachet.jpg');
+    background-size:cover;
+}
+
+.moosee-image {
+    background-image: url('../../media/moosee.jpg');
+    background-size:cover;
+}
+
+.wanida-image {
+    background-image: url('../../media/wanida.jpg');
+    background-size:cover;
+    background-position:bottom;
+}
+
+.wandaet-image {
+    background-image: url('../../media/wandaet.webp');
+    background-size:cover;
+    background-position:center;
+}
+
+.row-2-about-containers:hover .overlay {
+    height:100%;
+}
+
+.don-and-kay-image:hover .overlay {
+    height:100%;
+}
+
+.section-4-about-container {
+    min-height:800px;
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.directors-founders-page {
+    margin-top:50px;
+    height:auto;
+    width:100%;
+    background-color:white;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+.directors-container {
+    height:auto;
+    width:78%;
+    display:flex;
+    align-items:center;
+    justify-content:space-around;
+    flex-wrap:wrap;
+}
+
+.directors-title {
+    margin-bottom: 30px;
+    height:50px;
+    width:150px;
+    overflow:hidden;
+    text-align:center;
+}
+
+.directors-boxes {
+    height:auto;
+    width:255px;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    align-items:center;
+    margin:20px;
+}
+
+.directors-titles {
+    margin-top:30px;
+}
+
+.dave-image {
+    height: 250px;
+    width:250px;
+    background-image: url('../../media/dave.webp');
+    background-size:280px 250px;
+    background-position-x: -15px;
+    border-radius:50%;
+    border: 3px solid #008CBA;
+}
+
+.daveC-image {
+    height:250px;
+    width:250px;
+    border-radius:50%;
+    background-image: url('../../media/daveC.webp');
+    background-size:260px 260px;
+    border: 3px solid #008CBA;
+}
+
+.bob-image {
+    height:250px;
+    width:250px;
+    border-radius:50%;
+    background-image: url('../../media/bob.webp');
+    background-size:270px 270px;
+    background-position-x:-5px;
+    border: 3px solid #008CBA;
+}
+
+.directors-titles {
+    font-weight:600;
+    letter-spacing:1px;
+}
+
+.founders-container {
+    margin-top:40px;
+    height:400px;
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+    align-items:center;
+}
+
+.founders-title {
+    margin-top:30px;
+    margin-bottom:20px;
+}
+
+.don-and-kay-image {
+    background-image: url('../../media/donandkay.webp');
+    height:250px;
+    width:250px;
+    background-size:360px 270px;
+    background-position-x: -60px;
+    background-position-y: 1px;
+    border-radius:50%;
+    border:3px solid#008CBA;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    /* margin-top:20px; */
+}
+
+.section-4-about-picture {
+    background-image: url('../../media/group-photo.jpg');
+    background-size:cover;
+    background-position-x: -68px;
+    background-repeat: no-repeat;
+    height:600px;
+    width:600px;
+    border-radius:50%;
+    border:3px solid #008CBA;
+}
+
+/* .section-5-about {
+    height:100px;
+    background-color:black;
+    width:100%;
+} */
+
+
+.overlay {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #008CBA;
+    width: 100%;
+    height: 0;
+    transition: .4s ease;
+    overflow:hidden;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    cursor:pointer;
+}
+
+@media only screen and (max-width:800px) {
+    .about-section-2-paragraph {
+        width:90%;
+    }
+
+    .about-section-2-container {
+        height:90vh;
+        position:relative;
+        top:11vh;
+        top:50px;
+        margin-bottom:50px;
+    }
+
+    .about-section-1-content-container {
+        height:2000px;
+    }
+
+    .directors-container {
+        width:100%;
+    }
+
+    .member-line-2 {
+        height:1200px;
+    }
+
+    .row-2-about-containers {
+        /* margin-bottom:100px; */
+    }
+
+    .about-2-picture-container-1 {
+        overflow: visible;
+        height:calc(100vw / 1.2);
+        min-height:600px;
+        background-position-x: calc(100vw / -5.2);
+    }
+
+    .about-2-container-1 {
+        overflow:hidden;
+        height:calc(100vw / 1.43);
+        min-height:500px;
+        width:600px;
+    }
+
+    .stylized-bg {
+        height:200px;
+        background-color:rgb(51, 201, 89);
+        justify-content:center;
+        color:white;
+        top:calc(100vw / 4.4);
+    }
+
+    .about-2-picture-container-2 {
+        overflow:hidden;
+        height:100%;
+        width:740px;
+        background-image: url('../../media/father_and_son.jpg');
+        background-size:600px 460px;
+        background-position:top;
+        background-repeat: no-repeat;
+    }
+
+    .stylized-bg-2 {
+        height:160px;
+        width:100%;
+        background-color:rgb(51, 111, 201);
+        justify-content:center;
+        position:relative;
+        top:calc(100vw / 2.005);
+    }
+
+    .about-2-picture-container-3 {
+        overflow:hidden;
+        height:580px;
+        width:760px;
+        background-image: url('../../media/karen_girls.jpg');
+        background-size: 720px 500px;
+        background-position-y:calc(100vw / 100);
+        background-repeat: no-repeat;
+    }
+
+    .stylized-bg-3 {
+        height:240px;
+        width:600px;
+        background-color:rgb(201, 51, 193);
+        justify-content:center;
+        position:relative;
+        top:calc(100vw / 2.35);
+    }
+}
+
+@media only screen and (max-width:700px) {
+    .stylized-bg {
+        top:150px;
+    }
+
+    .stylized-bg-2 {
+        top:350px;
+    }
+
+    .stylized-bg-3 {
+        top:300px;
+    }
+}
+
+@media only screen and (max-width:640px) {
+
+
+    .about-2-container-1 {
+        overflow:hidden;
+        min-height:500px;
+        width:calc(100vw / 1.15);
+    }
+
+    .stylized-bg {
+        height:200px;
+        background-color:rgb(51, 201, 89);
+        justify-content:center;
+        color:white;
+        top:calc(100vw / 4.4);
+    }
+
+    .about-2-picture-container-2 {
+        overflow:hidden;
+        height:100%;
+        width:740px;
+        background-image: url('../../media/father_and_son.jpg');
+        background-size:600px 460px;
+        background-position:top;
+        background-repeat: no-repeat;
+    }
+
+    .stylized-bg-2 {
+        height:160px;
+        width:100%;
+        background-color:rgb(51, 111, 201);
+        justify-content:center;
+        position:relative;
+        top:calc(100vw / 2.04);
+    }
+
+    .about-2-picture-container-3 {
+        overflow:hidden;
+        height:580px;
+        width:760px;
+        background-image: url('../../media/karen_girls.jpg');
+        background-size: 720px 500px;
+        background-position-y:calc(100vw / 100);
+        background-repeat: no-repeat;
+    }
+
+    .stylized-bg-3 {
+        height:240px;
+        width:600px;
+        background-color:rgb(201, 51, 193);
+        justify-content:center;
+        position:relative;
+        top:calc(100vw / 2.35);
+    }
+}

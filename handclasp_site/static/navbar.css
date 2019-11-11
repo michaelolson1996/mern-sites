@@ -1,0 +1,218 @@
+.header {
+    height: 60px;
+    width: 100vw;
+    background-color: white;
+    box-shadow: 0px 2px 8px rgba(8, 8, 8, 0.588);
+    position: fixed;
+    top:0;
+    left:0;
+    z-index:1000;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    transition: height .8s ease;
+}
+
+.nav_title_container {
+    width: 240px;
+    height:60px;
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
+    text-decoration: none;
+}
+
+.handclasp_nav_logo {
+    height: 50px;
+    width: 60px;
+    background-image: url('https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.MBE7mHhMWsksvLIWGryB0AHaGr%26pid%3D15.1&f=1');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.nav_title {
+    font-weight: 600;
+    margin-left: 5px;
+    letter-spacing: 1px;
+    color: var(--text);
+    font-weight: 600;
+    font-size: 1.9em;
+}
+
+.nav_title:hover {
+    text-decoration: none;
+    color: var(--text);
+}
+
+.handclasp_nav_logo {
+    height: 40px;
+    width: 50px;
+    background-image: url('https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.MBE7mHhMWsksvLIWGryB0AHaGr%26pid%3D15.1&f=1');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.nav_menu {
+    position: absolute;
+    right: 20px;
+    height:60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav_dividers {
+    height:auto;
+    margin:0;
+    padding:0;
+}
+
+.nav_menu_item {
+    cursor: pointer;
+    color: var(--text);
+    padding: 14px;
+    height:60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+}
+
+.nav_menu_item:hover {
+    text-decoration:none;
+    color: var(--blue);
+}
+
+.dropdown_global {
+    position: fixed;
+    top: 55px;
+    margin:0;
+    padding-top:10px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:space-around;
+}
+
+#nav_about_hover_dd1_display:hover ~ #dropdown_container_1 {
+    display:flex;
+}
+
+#nav_about_hover_dd2_display:hover ~ #dropdown_container_2 {
+    display:flex;
+}
+
+#dropdown_container_1:hover {
+    display:flex;
+}
+
+#dropdown_container_2:hover {
+    display:flex;
+}
+
+#dropdown_container_1 {
+    transition: top .8s ease;
+    left: calc(100vw - 493px);
+    display:none;
+    width: 160px;
+    height:136.5px;
+}
+
+#nav_about_hover_dd1_display:hover ~ #dropdown_container_1 {
+    display:flex;
+}
+
+#dropdown_container_1:hover {
+    display:flex;
+}
+
+#dropdown_container_2 {
+    transition: top .8s ease;
+    left: calc(100vw - 258px);
+    display:none;
+    width: 160px;
+    height:200px;
+}
+
+.dropdown_menu_item {
+    perspective: 1000px;
+    background-color: var(--blue);
+    height:60px;
+    width:160px;
+    padding: 0;
+    border: 2px solid white;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    list-style: none;
+}
+
+.dropdown_menu_item:hover {
+    cursor:pointer;
+}
+
+.dropdown_menu_item:hover > .dropdown_menu_item_text {
+    font-weight:600;
+}
+
+.dropdown_menu_item_text {
+    color: white;
+    margin:0;
+    padding:0;
+}
+
+.nav_checkbox {
+    display:none;
+}
+
+
+
+@media only screen and (max-width:880px) {
+    .nav_menu_item {
+        display: none;
+    }
+
+    .nav_dividers {
+        display:none;
+    }
+
+    .nav_burger_menu_container {
+        position:fixed;
+        right:20px;
+        height:60px;
+        width:50px;
+        z-index:100000;
+        /* background-color: black; */
+        display: flex;
+        align-items: center;
+        justify-content:center;
+    }
+
+    .nav_burger_menu_container:hover {
+        cursor:pointer;
+    }
+    
+    .nav_burger_menu_bars,
+    .nav_burger_menu_bars::before,
+    .nav_burger_menu_bars::after {
+        display:block;
+        height: 3.5px;
+        width:36px;
+        background-color: var(--blue);
+        border-radius:2px;
+    }
+    
+    .nav_burger_menu_bars::before,
+    .nav_burger_menu_bars::after {
+        content: '';
+        position:absolute;
+    }
+    
+    .nav_burger_menu_bars::before {
+        bottom:18px;
+    }
+    
+    .nav_burger_menu_bars::after {
+        top:18px;
+    }
+}

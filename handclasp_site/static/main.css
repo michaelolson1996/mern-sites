@@ -1,0 +1,54 @@
+
+:root {
+    --text:rgba(5, 5, 5, 0.842);
+    --blue:rgb(0, 140, 186);
+    --red: rgb(181, 15, 25);
+}
+
+*, html {
+    font-family: 'Raleway';
+    margin:0;
+    padding:0;
+    letter-spacing:1px;
+}
+
+.global_hc_button {
+    height:45px;
+    width:160px;
+    font-weight:400;
+    font-size:.8em;
+    background-color:white;
+    text-decoration:none;
+    line-height:45px;
+    text-align:center;
+    color:#008CBA;
+}
+
+.global_hc_button:hover {
+    font-weight:600;
+    letter-spacing:1px;
+    cursor:pointer;
+}
+
+.svg {
+    height: 45px;
+    left: 0;
+    position: absolute;
+    top: 0; 
+    width: 100%; 
+}
+
+.rect {
+    fill: none;
+    stroke: #008CBA;
+    stroke-width: 2;
+    stroke-dasharray: 422, 0;
+    transition: all 0.35s linear;
+}
+
+.global_hc_button:hover .rect {
+    stroke-width: 5;
+    stroke-dasharray: 15, 310;
+    stroke-dashoffset: 48;
+    transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+}
