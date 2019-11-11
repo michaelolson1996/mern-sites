@@ -1,0 +1,33 @@
+.video-page-wrap {
+    height:auto;
+    width:100vw;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:-1000;
+}
+
+.video-page-1 {
+    height:100vh;
+    width:100%;
+    min-height:600px;
+    min-width:800px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.search-video-container {
+    position:absolute;
+    top:40px;
+    left:50%;
+    transform: translateX(-50%);
+    color:white;
+    z-index:5000;
+}
+
+.video-container {
+    height:450px;
+    width:800px;
+    border:1px solid black
+}

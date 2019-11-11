@@ -1,0 +1,123 @@
+
+.home-page-wrap {
+    height:auto;
+    width:100vw;
+}
+
+.home-page-blue {
+    min-height:600px;
+    width:100vw;
+    background-color:rgba(2, 200, 214, 0.8);
+    position:absolute;
+    top:90px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    z-index:-1000;
+}
+
+.home-box-container {
+    height:300px;
+    width:500px;
+    background-color:black;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    color:white;
+}
+
+.home-box-title {
+    font-family:Oswald;
+}
+
+.button-container {
+    height:50px;
+    width:150px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    position:relative;
+    top:20px;
+}
+
+.get-started-button {
+    border: none;
+    background-color:transparent;
+    color:white;
+    font-size:1em;
+    display:inline;
+    font-family: Oswald;
+    letter-spacing: 1px;
+}
+
+.get-started-button:hover {
+    cursor:pointer;
+    text-decoration:underline;
+}
+
+.home-page-2 {
+    width:100vw;
+    height:800px;
+    top:690px;
+    position:absolute;
+    display:flex;
+    justify-content:space-around;
+}
+
+.fas {
+    position:absolute;
+    top:30px;
+    left:50%;
+    z-index:101;
+    transform:translateX(-50%);
+    font-size:2em;
+}
+
+.fas:hover {
+    font-size:2.1em;
+    cursor:pointer;
+}
+
+.image-text-container-page-2 {
+    height:485px;
+    width:100%;
+    position:relative;
+    top:200px;
+    z-index:-5000;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    align-items:center;
+}
+
+.page-2-boxes {
+    height:500px;
+    width:500px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:space-around;
+}
+
+.picture {
+    height:320px;
+    width:450px;
+}
+
+.box-title {
+    width:400px;
+    text-align:center;
+}
+
+.box-text {
+    text-align:center;
+}
+
+.home-page-3 {
+    height:100vh;
+    width:100vw;
+    position:absolute;
+    top:1580px;
+    background-color:black;
+}
