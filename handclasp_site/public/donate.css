@@ -162,7 +162,7 @@ svg {
     margin:auto;
     border:3px solid var(--blue);
 }
-
+/* 
 .image-1 {
     background-image:url('./images/donate_image_1.jpg');
 }
@@ -204,7 +204,7 @@ svg {
 
 .image-10 {
     background-image:url('./images/donate_image_10.jpg');
-}
+} */
 
 .donation-section-container {
     width:100%;

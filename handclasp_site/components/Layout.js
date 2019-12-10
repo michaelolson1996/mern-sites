@@ -1,6 +1,6 @@
 // import App from 'next/app'
 import Head from 'next/head'
-import Navbar from './Navbar'
+import Navbar from './nav/Navbar'
 import Footer from './Footer'
 // import '../static/styles/main.css'
 // import withRedux from "next-redux-wrapper";

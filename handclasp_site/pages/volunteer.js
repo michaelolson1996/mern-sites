@@ -1,4 +1,5 @@
 import { Component } from 'react';
+import '../public/volunteer.css'
 
 // import Footer from '../components/Footer';
 import Router from 'next/router';

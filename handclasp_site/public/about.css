@@ -20,7 +20,7 @@
 .about-2-picture-container-1 {
     height:360px;
     width:760px;
-    background-image: url('../../media/tete.webp');
+    /* background-image: url('../static/'); */
     background-size: 1000px 500px;
     background-position-x: -300px;
     display:flex;
@@ -80,7 +80,7 @@
 .about-2-picture-container-2 {
     height:360px;
     width:760px;
-    background-image: url('../../media/father_and_son.jpg');
+    /* background-image: url('../../media/father_and_son.jpg'); */
     background-size:480px 360px;
     background-position:right;
     background-repeat: no-repeat;
@@ -95,7 +95,7 @@
 .about-2-picture-container-3 {
     height:360px;
     width:760px;
-    background-image: url('../../media/karen_girls.jpg');
+    /* background-image: url('../../media/karen_girls.jpg'); */
     background-size: 520px 400px;
     background-position-x:-100px;
     background-repeat: no-repeat;
@@ -200,29 +200,29 @@
 }
 
 .siami-image {
-    background-image: url('../../media/siaminew.jpg');
+    /* background-image: url('../../media/siaminew.jpg'); */
     background-size:cover;
     background-position: left;
 }
 
 .laechaeh-image {
-    background-image: url('../../media/lachet.jpg');
+    /* background-image: url('../../media/lachet.jpg'); */
     background-size:cover;
 }
 
 .moosee-image {
-    background-image: url('../../media/moosee.jpg');
+    /* background-image: url('../../media/moosee.jpg'); */
     background-size:cover;
 }
 
 .wanida-image {
-    background-image: url('../../media/wanida.jpg');
+    /* background-image: url('../../media/wanida.jpg'); */
     background-size:cover;
     background-position:bottom;
 }
 
 .wandaet-image {
-    background-image: url('../../media/wandaet.webp');
+    /* background-image: url('../../media/wandaet.webp'); */
     background-size:cover;
     background-position:center;
 }
@@ -288,7 +288,7 @@
 .dave-image {
     height: 250px;
     width:250px;
-    background-image: url('../../media/dave.webp');
+    /* background-image: url('../../media/dave.webp'); */
     background-size:280px 250px;
     background-position-x: -15px;
     border-radius:50%;
@@ -299,7 +299,7 @@
     height:250px;
     width:250px;
     border-radius:50%;
-    background-image: url('../../media/daveC.webp');
+    /* background-image: url('../../media/daveC.webp'); */
     background-size:260px 260px;
     border: 3px solid #008CBA;
 }
@@ -308,7 +308,7 @@
     height:250px;
     width:250px;
     border-radius:50%;
-    background-image: url('../../media/bob.webp');
+    /* background-image: url('../../media/bob.webp'); */
     background-size:270px 270px;
     background-position-x:-5px;
     border: 3px solid #008CBA;
@@ -335,7 +335,7 @@
 }
 
 .don-and-kay-image {
-    background-image: url('../../media/donandkay.webp');
+    /* background-image: url('../../media/donandkay.webp'); */
     height:250px;
     width:250px;
     background-size:360px 270px;
@@ -350,7 +350,7 @@
 }
 
 .section-4-about-picture {
-    background-image: url('../../media/group-photo.jpg');
+    /* background-image: url('../../media/group-photo.jpg'); */
     background-size:cover;
     background-position-x: -68px;
     background-repeat: no-repeat;
@@ -408,9 +408,9 @@
         height:1200px;
     }
 
-    .row-2-about-containers {
-        /* margin-bottom:100px; */
-    }
+    /* .row-2-about-containers {
+        margin-bottom:100px;
+    } */
 
     .about-2-picture-container-1 {
         overflow: visible;
@@ -438,7 +438,7 @@
         overflow:hidden;
         height:100%;
         width:740px;
-        background-image: url('../../media/father_and_son.jpg');
+        /* background-image: url('../../media/father_and_son.jpg'); */
         background-size:600px 460px;
         background-position:top;
         background-repeat: no-repeat;
@@ -457,7 +457,7 @@
         overflow:hidden;
         height:580px;
         width:760px;
-        background-image: url('../../media/karen_girls.jpg');
+        /* background-image: url('../../media/karen_girls.jpg'); */
         background-size: 720px 500px;
         background-position-y:calc(100vw / 100);
         background-repeat: no-repeat;
@@ -508,7 +508,7 @@
         overflow:hidden;
         height:100%;
         width:740px;
-        background-image: url('../../media/father_and_son.jpg');
+        /* background-image: url('../../media/father_and_son.jpg'); */
         background-size:600px 460px;
         background-position:top;
         background-repeat: no-repeat;
@@ -527,7 +527,7 @@
         overflow:hidden;
         height:580px;
         width:760px;
-        background-image: url('../../media/karen_girls.jpg');
+        /* background-image: url('../../media/karen_girls.jpg'); */
         background-size: 720px 500px;
         background-position-y:calc(100vw / 100);
         background-repeat: no-repeat;

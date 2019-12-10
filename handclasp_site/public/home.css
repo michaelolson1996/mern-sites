@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
 *, html {
     margin: 0;
     font-family: 'Raleway', sans-serif;
@@ -24,10 +26,10 @@
 }
 
 .background {
-    height:100vh;
+    height:98vh;
     min-height: 800px;
-    width:2600px;
-    background-image: url('./images/home_image_1.jpg');
+    width:2300px;
+    background-image: url('/static/home_image_1.jpg');
     background-position-y: calc(40vw / -2.2);
     background-position-x: calc(40vw / 2);
     background-size: calc(80vw * 1.4);
@@ -36,8 +38,8 @@
     top: 60px;
     left: 0;
     z-index:-2;
-    transition: all .1s ease;
-    transition: top .6s ease;
+    /* transition: all .1s ease;
+    transition: top .6s ease; */
 }
 
 @keyframes floatIn {
@@ -67,7 +69,7 @@
     -ms-filter: "FlipH";
     height:110vh;
     width:580px;
-    background-image:linear-gradient(-79deg, var(--blue), 540px,rgba(0,0,0,0) 0);
+    background-image:linear-gradient(-79deg, blue, 540px,rgba(0,0,0,0) 0);
     animation: floatIn .9s ease-out;
 }
 
@@ -86,7 +88,7 @@
 .home-section-2-container {
     background-color:white;
     height:600px;
-    width:100%;
+    width:100vw;
     z-index:0;
     display:flex;
     flex-direction:column;
@@ -257,7 +259,7 @@ rect {
 .home-section-4-bg {
     height:650px;
     width:100vw;
-    background-image: url('./images/home_image_2.webp');
+    background-image: url('/static/home_image_2.webp');
     background-size: cover;
     background-repeat:no-repeat;
 }
