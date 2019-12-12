@@ -1,6 +1,6 @@
 import { Component } from 'react';
 import Footer from '../components/Footer';
-import '../public/donate.css'
+// import '../public/donate.css'
 
 class Donate extends Component {
     

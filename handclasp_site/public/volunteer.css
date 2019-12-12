@@ -10,7 +10,11 @@
 }
 
 .jesus-picture {
-    height:calc(100vh / 1.8);
+    background-image: url('/static/volunteer_image_1.jpg');
+    background-repeat: no-repeat;
+    background-size:1600px;
+    background-position-y: -300px;
+    height:calc(100vh / 1.4);
     width:100%;
     margin-top:30px;
 }
@@ -41,7 +45,7 @@
 
 .center-provides {
     list-style: inside;
-    list-style-type: circle, var(--blue);
+    list-style-type: circle, blue;
     width:60%;
     margin:auto;
 }
@@ -71,7 +75,7 @@ tr {
 
 .accomodation-title {
     text-align:center;
-    background-color:var(--blue);
+    background-color:blue;
     color:white;
     font-weight:600;
 }
@@ -93,7 +97,7 @@ th:nth-child(1) {
 }
 
 .table-title-columns {
-    background-color: var(--blue);
+    background-color: blue;
     color:white;
 }
 

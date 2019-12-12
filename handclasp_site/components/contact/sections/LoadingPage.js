@@ -1,5 +1,5 @@
 import { Component } from 'react'
-import '../public/loading.css'
+// import '../public/loading.css'
 
 class LoadingPage extends Component {
     constructor(props) {

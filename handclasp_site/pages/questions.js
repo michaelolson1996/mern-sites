@@ -1,7 +1,5 @@
 import { Component } from 'react';
 import Question from '../components/Question';
-import Router from 'next/router';
-import Layout from '../components/Layout';
 // import global from '../public/main.css'
 // import questions from '../static/styles/questions.css';
 

@@ -1,3 +1,8 @@
+/* .about-page-wrap {
+    height:auto;
+    justify-content: flex-start;
+} */
+
 .about-section-1-content-container {
     width:100%;
     height:1400px;
@@ -20,7 +25,7 @@
 .about-2-picture-container-1 {
     height:360px;
     width:760px;
-    /* background-image: url('../static/'); */
+    background-image: url('/static/about_container_1.webp');
     background-size: 1000px 500px;
     background-position-x: -300px;
     display:flex;
@@ -80,7 +85,7 @@
 .about-2-picture-container-2 {
     height:360px;
     width:760px;
-    /* background-image: url('../../media/father_and_son.jpg'); */
+    background-image: url('/static/about_container_2.jpg');
     background-size:480px 360px;
     background-position:right;
     background-repeat: no-repeat;
@@ -95,7 +100,7 @@
 .about-2-picture-container-3 {
     height:360px;
     width:760px;
-    /* background-image: url('../../media/karen_girls.jpg'); */
+    background-image: url('/static/about_container_3.jpg');
     background-size: 520px 400px;
     background-position-x:-100px;
     background-repeat: no-repeat;
@@ -103,7 +108,6 @@
 
 .about-section-2-container {
     height:100vh;
-    /* min-height:800px; */
     width:100%;
     display:flex;
     flex-direction:column;
@@ -114,13 +118,14 @@
 
 .about-section-2-title {
     font-weight:600;
+    margin-bottom:15px;
 }
 
 .about-section-2-paragraph {
     width:780px;
     text-align:center;
     line-height: 1.6em;
-    margin-top:15px;
+    
 }
 
 .about-section-3-container {
@@ -200,29 +205,29 @@
 }
 
 .siami-image {
-    /* background-image: url('../../media/siaminew.jpg'); */
+    background-image: url('/static/about_image_4.jpg');
     background-size:cover;
     background-position: left;
 }
 
 .laechaeh-image {
-    /* background-image: url('../../media/lachet.jpg'); */
+    background-image: url('/static/about_image_5.jpg');
     background-size:cover;
 }
 
 .moosee-image {
-    /* background-image: url('../../media/moosee.jpg'); */
+    background-image: url('/static/about_image_6.jpg');
     background-size:cover;
 }
 
 .wanida-image {
-    /* background-image: url('../../media/wanida.jpg'); */
+    background-image: url('/static/about_image_7.jpg');
     background-size:cover;
     background-position:bottom;
 }
 
 .wandaet-image {
-    /* background-image: url('../../media/wandaet.webp'); */
+    background-image: url('/static/about_image_8.webp');
     background-size:cover;
     background-position:center;
 }
@@ -288,7 +293,7 @@
 .dave-image {
     height: 250px;
     width:250px;
-    /* background-image: url('../../media/dave.webp'); */
+    background-image: url('/static/about_image_9.webp');
     background-size:280px 250px;
     background-position-x: -15px;
     border-radius:50%;
@@ -299,7 +304,7 @@
     height:250px;
     width:250px;
     border-radius:50%;
-    /* background-image: url('../../media/daveC.webp'); */
+    background-image: url('/static/about_image_10.webp');
     background-size:260px 260px;
     border: 3px solid #008CBA;
 }
@@ -308,7 +313,7 @@
     height:250px;
     width:250px;
     border-radius:50%;
-    /* background-image: url('../../media/bob.webp'); */
+    background-image: url('/static/about_image_11.webp');
     background-size:270px 270px;
     background-position-x:-5px;
     border: 3px solid #008CBA;
@@ -335,7 +340,7 @@
 }
 
 .don-and-kay-image {
-    /* background-image: url('../../media/donandkay.webp'); */
+    background-image: url('/static/about_image_12.webp');
     height:250px;
     width:250px;
     background-size:360px 270px;
@@ -350,7 +355,7 @@
 }
 
 .section-4-about-picture {
-    /* background-image: url('../../media/group-photo.jpg'); */
+    background-image: url('/static/about_image_13.jpg');
     background-size:cover;
     background-position-x: -68px;
     background-repeat: no-repeat;
@@ -359,13 +364,6 @@
     border-radius:50%;
     border:3px solid #008CBA;
 }
-
-/* .section-5-about {
-    height:100px;
-    background-color:black;
-    width:100%;
-} */
-
 
 .overlay {
     position: relative;
@@ -407,10 +405,6 @@
     .member-line-2 {
         height:1200px;
     }
-
-    /* .row-2-about-containers {
-        margin-bottom:100px;
-    } */
 
     .about-2-picture-container-1 {
         overflow: visible;

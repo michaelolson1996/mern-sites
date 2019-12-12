@@ -1,4 +1,6 @@
 // import App from 'next/app'
+import Link from 'next/link';
+
 import Head from 'next/head'
 import Navbar from './nav/Navbar'
 import Footer from './Footer'
@@ -26,7 +28,7 @@ class Layout extends React.Component {
                     {this.props.children}
                 <Footer />
             </div>
-            // </Provider>        
+            // </Provider>      
         )
     }
 }

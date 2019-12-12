@@ -1,5 +1,5 @@
 import { Component } from 'react';
-import '../public/volunteer.css'
+// import '../public/volunteer.css'
 
 // import Footer from '../components/Footer';
 import Router from 'next/router';
@@ -9,7 +9,7 @@ class Volunteer extends Component {
     render() {
         return (
             <div className = "volunteer-page-wrap background-push">
-            {/* <img src = {Jesus} className = "jesus-picture" /> */}
+            <div className = "jesus-picture" />
             <h1 className = "volunteer-questions-title">Volunteer Questions</h1>
             <div className = "volunteer-info-container">
                 <h3 className = "volunteer-title">The following is basic rules for volunteers serving in Thailand at HRDC.</h3>

@@ -1,5 +1,7 @@
+import '../public/footer.css'
+
 const Footer = () => (
-    <div>This is my footer</div>
+    <div className = "footer-wrap"></div>
 )
 
 export default Footer
