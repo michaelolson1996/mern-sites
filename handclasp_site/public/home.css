@@ -124,9 +124,10 @@
 .button-link:hover {
     font-weight:600;
     letter-spacing:1px;
+    cursor:pointer;
 }
 
-svg {
+.svg {
     height: 45px;
     left: 0;
     position: absolute;
@@ -135,7 +136,7 @@ svg {
 }
 
 .rect {
-    fill: none;
+    /* fill: none; */
     stroke: #008CBA;
     stroke-width: 2;
     stroke-dasharray: 422, 0;

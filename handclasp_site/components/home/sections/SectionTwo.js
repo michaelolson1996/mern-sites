@@ -9,7 +9,7 @@ const SectionTwo = () => {
                 <p className = "home-section-2-p">Handclasp is committed to giving a child a chance to develop their skills through your sponsorship donations by sending them to school.  Handclasp has a partnership with Hill Tribes Resources and Development Center that also trains children in Christian education.  Our partnership has allowed many students to advance to a higher education and has been successful in many students graduating from universities with a variety of degrees.  Handclasp thanks all of our sponsors that have helped accomplish these opportunities through prayer and support.
                 </p>
                 <Link href="/projects">
-                    <Button text="Project Details" buttonClass="handclasp-button-svg" />
+                    <Button text="Project Details" buttonClass="" />
                 </Link>
             </div>
         </div>

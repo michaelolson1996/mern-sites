@@ -7,15 +7,15 @@
     height:100vh;
     min-height:620px;
     width:100%;
-    background-color:var(--blue);
+    background-color:#008CBA;
     display:flex;
     justify-content:center;
     align-items:center;
 }
 
-.braintree-show-options {
+/* .braintree-show-options {
     width:500px;
-}
+} */
 
 /* .braintree-options-list {
     height:auto;
@@ -29,9 +29,9 @@
     z-index:1000;
 } */
 
-svg {
+/* svg {
     display: none;
-}
+} */
 
 /* .braintree-show-paypalCredit .braintree-paypalCredit {
     display:none;
@@ -162,49 +162,49 @@ svg {
     margin:auto;
     border:3px solid var(--blue);
 }
-/* 
+
 .image-1 {
-    background-image:url('./images/donate_image_1.jpg');
+    background-image:url('/static/donate_image_1.jpg');
 }
 
 .image-2 {
-    background-image:url('./images/donate_image_2.jpg');
+    background-image:url('/static/donate_image_2.jpg');
 }
 
 .image-3 {
-    background-image:url('./images/donate_image_3.jpg');
+    background-image:url('/static/donate_image_3.jpg');
 }
 
 .image-4 {
-    background-image:url('./images/donate_image_4.jpg');
+    background-image:url('/static/donate_image_4.jpg');
 }
 
 .image-5 {
-    background-image: url('./images/donate_image_5.jpg')
+    background-image: url('/static/donate_image_5.jpg')
 }
 
 .image-6 {
-    background-image: url('./images/donate_image_6.jpg')
+    background-image: url('/static/donate_image_6.jpg')
 }
 
 .image-7 {
     background-position-x: -40px;
-    background-image:url('./images/donate_image_7.jpg')
+    background-image:url('/static/donate_image_7.jpg')
 }
 
 .image-8 {
     background-position-x: -60px;
-    background-image:url('./images/donate_image_8.jpg')
+    background-image:url('/static/donate_image_8.jpg')
 }
 
 .image-9 {
     background-position-x: -40px;
-    background-image:url('./images/donate_image_9.jpg');
+    background-image:url('/static/donate_image_9.jpg');
 }
 
 .image-10 {
-    background-image:url('./images/donate_image_10.jpg');
-} */
+    background-image:url('/static/donate_image_10.jpg');
+}
 
 .donation-section-container {
     width:100%;

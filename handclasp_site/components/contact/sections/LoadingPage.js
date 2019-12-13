@@ -19,16 +19,12 @@ class LoadingPage extends Component {
 
     render() {
         return (
-            // <div className = {
-            //     `${loading.loading_bg}`
-            // }>
-            //     <div className = {
-            //         `${loading.loading_inner_container}`
-            //     }>
+            <div className="loading_bg">
+                <div className="loading_inner_container">
                     
-            //     </div>
-            // </div>
-            <div></div>
+                </div>
+            </div>
+            // <div></div>
         )
     }
 }

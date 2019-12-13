@@ -45,7 +45,7 @@
 
 .center-provides {
     list-style: inside;
-    list-style-type: circle, blue;
+    list-style-type: circle, #008CBA;
     width:60%;
     margin:auto;
 }
@@ -75,7 +75,7 @@ tr {
 
 .accomodation-title {
     text-align:center;
-    background-color:blue;
+    background-color:#008CBA;
     color:white;
     font-weight:600;
 }
@@ -97,7 +97,7 @@ th:nth-child(1) {
 }
 
 .table-title-columns {
-    background-color: blue;
+    background-color: #008CBA;
     color:white;
 }
 

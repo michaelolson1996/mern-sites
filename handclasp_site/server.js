@@ -6,20 +6,30 @@ const port = process.env.PORT || 3008
 const app = next({ dev })
 const handle = app.getRequestHandler()
 const bodyParser = require('body-parser')
-// import emailRoute from './routes/email/emailRoute'
+const emailRoute = require('./routes/email/emailRoute');
 
 app.prepare()
 .then(() => {
-  const server = express()
+  const server = express();
 
 // Body Parser Middleware
 
-  server.use(bodyParser.urlencoded({ extended: false }))
-  server.use(bodyParser.json())
+  server.use(bodyParser.urlencoded({ extended: false }));
+  server.use(bodyParser.json());
+
+  server.use('/api/email', emailRoute);
+
+  server.use((err, req, res, next) => {
+    if (err.name === "UnauthorizedError") {
+        res.status(err.status)
+    }
+    return res.send({ message: err.message })
+  })
 
   server.get('*', (req, res) => {
     return handle(req, res)
   })
+
 
   server.listen(port, (err) => {
     if (err) throw err

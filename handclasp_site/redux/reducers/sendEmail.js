@@ -1,4 +1,6 @@
-const initialMessageStatus = []
+// import {RETURN_MESSAGE_STATUS} from '../actions/emailActions'
+
+let initialMessageStatus = [];
 
 export default (messageStatus = initialMessageStatus, action) => {
     switch (action.type) {

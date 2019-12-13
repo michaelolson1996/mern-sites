@@ -4,6 +4,8 @@ import { Component } from 'react';
 // import Footer from '../components/Footer';
 import Router from 'next/router';
 // import Layout from '../components/Layout'
+import Button from '../components/global/Button';
+import Link from 'next/link';
 
 class Volunteer extends Component {
     render() {
@@ -102,12 +104,9 @@ class Volunteer extends Component {
                     </tbody>
                 </table>
                 <div className = "button-volunteer-container">
-                    <div className = "button-link" to = '/contact'>
-                        <svg className = "handclasp-button-svg">
-                            <rect x="0" y="0" fill="none" width="100%" height="100%"/>
-                        </svg>
-                        Apply Now!
-                    </div>
+                <Link href="/contact">
+                    <Button text="Apply Now!" />
+                </Link>
                 </div>
             </div>
 

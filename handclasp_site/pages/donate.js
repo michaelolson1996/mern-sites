@@ -1,38 +1,15 @@
 import { Component } from 'react';
-import Footer from '../components/Footer';
-// import '../public/donate.css'
+import SectionOne from '../components/donate/sections/SectionOne';
+// import withRedux from 'next-redux-wrapper';
+// import initializeStore from '../redux/index';
 
 class Donate extends Component {
     
     render() {
         return (
-            <div className = "donate-wrap background-push">                     
-                <div className = "donate-page-1">
-                    <div className = "donate-options-container">
-                    <div className = "donation-options-inside-container">
-                        <div className = "donation-options-circles">
-                            <p className = "donate-circles-inner-text">&#36;5</p>
-                        </div>
-                    </div>
-                    <div className = "donation-options-inside-container">
-                        <div className = "donation-options-circles">
-                            <p className = "donate-circles-inner-text">&#36;10</p>
-                        </div>
-                    </div>
-                    <div className = "donation-options-inside-container">
-                        <div className = "donation-options-circles">
-                            <p className = "donate-circles-inner-text">&#36;20</p>
-                        </div>
-                    </div>
-                    <div className = "donation-options-inside-container">
-                        <div className = "donation-options-circles">
-                            <p className = "donate-circles-inner-text">&#36;50</p>
-                        </div>
-                    </div>
+            <div className = "donate-wrap background-push">
+                <SectionOne />
 
-                    </div>
-                    {/* <DonateButton /> */}
-                </div>
                 <div className = "donate-section-2-container">
                     <div className = "donation-info-2-container">
                     <div className = "donation-page-title-container">
@@ -173,11 +150,9 @@ class Donate extends Component {
                         </div>
                     </div>
                 </div>
-                {/* <Footer /> */}
             </div>
         )
     }
 }
 
 export default Donate
-

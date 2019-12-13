@@ -2,8 +2,10 @@ const lib = require('../index')
 lib.dotenv.config()
 const { google } = lib.google
 const OAuth2 = google.auth.OAuth2
+const nodemailer = lib.nodemailer;
 
 const sendForm = (req, res) => {
+  // console.log(req)
     const client = req.body
     let mailOptions = {
         from: `client email address: ${client.email}`,
@@ -12,6 +14,7 @@ const sendForm = (req, res) => {
         text: `client name: ${ client.name }
                client massage: ${ client.message } 
                client phone: ${ client.phone }
+               client subject: ${client.subject}
                client email: ${ client.email }
                current time: ${ new Date() }` 
       }
@@ -27,9 +30,9 @@ const sendForm = (req, res) => {
       });
 
       async function getAccessToken() {
-        const tokens = await oauth2Client.refreshAccessToken().catch((err) => {
+        const tokens = await oauth2Client.getRequestHeaders().catch((err) => {
             if (err) {
-                console.log(err)
+                console.log('access token err')
             }
             return res.status(200).send({ status: false })
         })
@@ -61,7 +64,7 @@ const sendForm = (req, res) => {
           });
           transporter.close()
         })
-  
+
         return res.status(200).send({ success: true })
 }
 

@@ -1,5 +1,5 @@
-import sendEmailAction from './emailActions'
+import sendClientMessage from './emailActions'
 
 module.exports = {
-    ...sendEmailAction
+    ...sendClientMessage
 }
