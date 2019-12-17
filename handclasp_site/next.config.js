@@ -4,10 +4,11 @@ module.exports = withCSS({
         return {
             '/': {page: '/'},
             '/donate': {page: '/donate'},
-            '/about': {page: '/about'},
+            '/about': {page: '/about', query: 'siami'},
             '/contact': {page: '/contact'},
             '/questions': {page: '/questions'},
-            '/volunteer': {page: '/volunteer'}
+            '/volunteer': {page: '/volunteer'},
+            '/inprogress': {page: '/inprogress'}
         }
     }
 })

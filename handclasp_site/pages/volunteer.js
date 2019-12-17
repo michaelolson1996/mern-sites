@@ -1,5 +1,6 @@
-import { Component } from 'react';
+import { Component, Fragment } from 'react';
 // import '../public/volunteer.css'
+import Head from 'next/head'
 
 // import Footer from '../components/Footer';
 import Router from 'next/router';
@@ -10,6 +11,11 @@ import Link from 'next/link';
 class Volunteer extends Component {
     render() {
         return (
+            <Fragment>
+            <Head>
+                <title>Handclasp: Volunteer</title>
+                <meta title="pizza hut" />
+            </Head>
             <div className = "volunteer-page-wrap background-push">
             <div className = "jesus-picture" />
             <h1 className = "volunteer-questions-title">Volunteer Questions</h1>
@@ -112,6 +118,7 @@ class Volunteer extends Component {
 
             {/* <Footer /> */}
         </div>
+        </Fragment>
 
         )
     }

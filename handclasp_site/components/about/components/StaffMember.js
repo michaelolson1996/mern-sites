@@ -1,14 +1,14 @@
-const StaffMember = (props) => {
-    return (
+const StaffMember = React.forwardRef(({href, onClick, name, image}, ref) => (
+    <a href={href} onClick={onClick} ref={ref}>
         <div className = "row-2-about-containers">
-                <div className = {`member-image ${props.image}`} onClick = {() => this.displayStory('siami')}>
-                    <div className = "overlay">
-                        <p className = "image-inner-text">{`${props.name}'s Story`}</p>
-                    </div>
+            <div className = {`member-image ${image}`}>
+                <div className = "overlay">
+                    <p className = "image-inner-text">{`${name}'s Story`}</p>
                 </div>
-            <h3 className = "member-name">{props.name}</h3>
+            </div>
+            <h3 className = "member-name">{name}</h3>
         </div>
-    )
-};
+    </a>
+));
 
 export default StaffMember;

@@ -11,6 +11,8 @@ import '../public/navbar.css'
 import '../public/volunteer.css'
 import '../public/loading.css'
 import '../public/donate.css'
+import '../public/inprogress.css'
+import '../public/questions.css'
 
 class MyApp extends App {
     static async getInitialProps({ Component, ctx }) {
@@ -22,7 +24,6 @@ class MyApp extends App {
 
     render () {
         const {Component, pageProps, store} = this.props
-
         return (
             <Provider store={store}>
                 <Layout>

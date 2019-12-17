@@ -20,14 +20,14 @@ class NavBig extends Component {
                     </Link>
                     <DropDown ddId='dropdown_container_1'>
                         <Link href="/questions">
-                            <DropDownChild text="questions" />
+                            <DropDownChild text="questions" style="dropdown_menu_item" />
                         </Link>
                         <Link href="/media">
-                            <DropDownChild text="media" />
+                            <DropDownChild text="media" style="dropdown_menu_item" />
                         </Link>
                     </DropDown>
                     <Divider />
-                    <Link href="/projects">
+                    <Link href="/inprogress" as="/projects">
                         <Button text="projects" style='nav_menu_item' />
                     </Link>
                     <Divider />
@@ -36,13 +36,13 @@ class NavBig extends Component {
                     </Link>
                     <DropDown ddId='dropdown_container_2'>
                         <Link href="/contact">
-                            <DropDownChild text="contact" />
+                            <DropDownChild text="contact" style="dropdown_menu_item" />
                         </Link>
                         <Link href="/volunteer">
-                            <DropDownChild text="volunteers" />
+                            <DropDownChild text="volunteers" style="dropdown_menu_item" />
                         </Link>
                         <Link href="/sponsor">
-                            <DropDownChild text="sponsor a kid" />
+                            <DropDownChild text="sponsor a kid" style="dropdown_menu_item" />
                         </Link>
                     </DropDown>
                     <Divider />

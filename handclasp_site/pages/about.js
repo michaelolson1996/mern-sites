@@ -1,6 +1,5 @@
 import Head from 'next/head';
 import { Component } from 'react';
-// import '../public/about.css';
 import SectionOne from '../components/about/sections/SectionOne';
 import SectionTwo from '../components/about/sections/SectionTwo';
 import SectionThree from '../components/about/sections/SectionThree';

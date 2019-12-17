@@ -20,9 +20,7 @@ class Form extends Component {
     sendClientInfo = () => {
         const { name, email, phone, subject, message } = this.state.inputs;
         const {dispatch} = this.props;
-        dispatch(sendClientMessage({ name, email, phone, subject, message })).then(res => {
-            console.log(res)
-        });
+        dispatch(sendClientMessage({ name, email, phone, subject, message }))
         this.props.toggleLoad()
         this.clearInputs()
     }
@@ -69,7 +67,7 @@ class Form extends Component {
         console.log(this.state)
         console.log(this.props)
         return (
-            <div className="form_container">
+            <form className="form_container">
                 {/* <div className="">
                     <div className = {
                         `${contact.contact_dave_info_container}`
@@ -89,23 +87,23 @@ class Form extends Component {
                         </div>
                     </div> */}
 
-                <form className="contact_form">
+                <div className="contact_form">
                     <h3 className="contact_us_title">Contact Us!</h3>
-                    <input onChange = { this.handleChange } value = { this.state.inputs.name } className="contact_form_inputs" name="name" type="text" placeholder="full name" required />
-                    <input onChange = { this.handleChange } value = { this.state.inputs.email } className="contact_form_inputs" name="email" type="email" placeholder="email" required />
-                    <input onChange = { this.handleChange } value = { this.state.inputs.phone } className="contact_form_inputs" name="phone" type="number" placeholder="phone" required />
-                    <input onChange = { this.handleChange } value = { this.state.inputs.phone } className="contact_form_inputs" name="subject" type="text" placeholder="subject" required />
-                    <textarea onChange = { this.handleChange } value = { this.state.inputs.message } className="form_inputs contact_page_textarea" name="message" type="text" placeholder="type your message here!" required />
-                </form>
+                    <input onChange = { this.handleChange } value = { this.state.inputs.name } className="contact_form_inputs" name="name" type="text" placeholder="full name" required="true" />
+                    <input onChange = { this.handleChange } value = { this.state.inputs.email } className="contact_form_inputs" name="email" type="email" placeholder="email" required="true" />
+                    <input onChange = { this.handleChange } value = { this.state.inputs.phone } className="contact_form_inputs" name="phone" type="number" placeholder="phone" required="true" strict="true" />
+                    <input onChange = { this.handleChange } value = { this.state.inputs.subject } className="contact_form_inputs" name="subject" type="text" placeholder="subject" required="true" />
+                    <textarea onChange = { this.handleChange } value = { this.state.inputs.message } className="contact_page_textarea" name="message" placeholder="type your message here!" />
+                </div>
                 <Button buttonClass="contact_form_submit_button" text="Submit" onClick={() => this.sendClientInfo()} />
-            </div>
+            </form>
         )
     }
 }
 
 function mapStateToProps(state) {
     return {
-        email: state
+        state: state
     };
  }
 

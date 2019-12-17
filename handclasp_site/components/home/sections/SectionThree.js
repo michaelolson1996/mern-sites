@@ -17,7 +17,7 @@ const SectionThree = () => {
                             <Link href="/donate">
                                 <Icon iconID="icon-home-2" iconClass="fa-hand-holding-usd" iconText="Donate" />
                             </Link>
-                            <Link href="/donate">
+                            <Link href="/about">
                                 <Icon iconID="icon-home-3" iconClass="fa-church" iconText="Our Mission" />
                             </Link>
                         </div>

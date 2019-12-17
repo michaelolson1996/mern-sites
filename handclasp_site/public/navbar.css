@@ -77,11 +77,12 @@
     align-items: center;
     position:relative;
     font-size: 1.2em;
+    transition: .4s ease-in-out;
 }
 
 .nav_menu_item:hover {
     text-decoration:none;
-    color: var(--blue);
+    color: #008CBA;
 }
 
 .dropdown_global {
@@ -166,53 +167,59 @@
     display:none;
 }
 
+.nav_burger_menu_container {
+    position:fixed;
+    right:20px;
+    height:59px;
+    width:50px;
+    z-index:100000;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
 
+.nav_burger_menu_container:hover {
+    cursor:pointer;
+}
 
-@media only screen and (max-width:880px) {
-    /* .nav_menu_item {
-        display: none;
-    }
+.nav_burger_menu_bars,
+.nav_burger_menu_bars::before,
+.nav_burger_menu_bars::after {
+    display:block;
+    height: 3.2px;
+    width:36px;
+    background-color: #008CBA;
+    border-radius:2px;
+}
 
-    .nav_dividers {
-        display:none;
-    }
+.nav_burger_menu_bars::before,
+.nav_burger_menu_bars::after {
+    content: '';
+    position:absolute;
+}
 
-    .nav_burger_menu_container {
-        position:fixed;
-        right:20px;
-        height:60px;
-        width:50px;
-        z-index:100000;
-        display: flex;
-        align-items: center;
-        justify-content:center;
-    }
+.nav_burger_menu_bars::before {
+    bottom:18px;
+}
 
-    .nav_burger_menu_container:hover {
-        cursor:pointer;
-    }
-    
-    .nav_burger_menu_bars,
-    .nav_burger_menu_bars::before,
-    .nav_burger_menu_bars::after {
-        display:block;
-        height: 3.5px;
-        width:36px;
-        background-color: var(--blue);
-        border-radius:2px;
-    }
-    
-    .nav_burger_menu_bars::before,
-    .nav_burger_menu_bars::after {
-        content: '';
-        position:absolute;
-    }
-    
-    .nav_burger_menu_bars::before {
-        bottom:18px;
-    }
-    
-    .nav_burger_menu_bars::after {
-        top:18px;
-    } */
+.nav_burger_menu_bars::after {
+    top:18px;
+}
+
+.nav_menu_small {
+    height:calc(100vh - 60px);
+    width:200px;
+    background-color: #008CBA;
+    position: fixed;
+    top:60px;
+    right:0;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.nav_small_dropdown_ex {
+    height:50px;
+    width:136px;
 }

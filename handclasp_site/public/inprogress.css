@@ -1,0 +1,21 @@
+.inprogress_wrap {
+    height:100vh;
+    width:100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inprogress_container {
+    height: auto;
+    width: auto;
+    text-align: center;
+}
+
+/* .inprogress_title {
+
+}
+
+.inprogress_text {
+
+} */

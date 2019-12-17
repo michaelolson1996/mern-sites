@@ -6,22 +6,22 @@ const SectionOne = () => {
         <div className = "donate-page-1">
             <div className = "donate-options-container">
                 <div className = "donation-options-inside-container">
-                    <Link href="/payment">
+                    <Link href="/inprogress" as='/payment'>
                         <Button amount="5" />
                     </Link>
                 </div>
                 <div className = "donation-options-inside-container">
-                    <Link href="/payment">
+                    <Link href="/inprogress" as='/payment'>
                         <Button amount="10" />
                     </Link>
                 </div>
                 <div className = "donation-options-inside-container">
-                    <Link href="/payment">
+                    <Link href="/inprogress" as='/payment'>
                         <Button amount="20" />
                     </Link>
                 </div>
                 <div className = "donation-options-inside-container">
-                    <Link href="/payment">
+                    <Link href="/inprogress" as='/payment'>
                         <Button amount="50" />
                     </Link>
                 </div>

@@ -5,7 +5,6 @@ const OAuth2 = google.auth.OAuth2
 const nodemailer = lib.nodemailer;
 
 const sendForm = (req, res) => {
-  // console.log(req)
     const client = req.body
     let mailOptions = {
         from: `client email address: ${client.email}`,
@@ -38,6 +37,7 @@ const sendForm = (req, res) => {
         })
         const accessToken = tokens.credentials.access_token
         return accessToken
+        // console.log(tokens.credentials)
       }
 
 
@@ -63,6 +63,8 @@ const sendForm = (req, res) => {
             }
           });
           transporter.close()
+        }).catch((err) => {
+          console.log(err)
         })
 
         return res.status(200).send({ success: true })

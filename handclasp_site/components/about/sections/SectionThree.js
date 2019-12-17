@@ -1,5 +1,6 @@
 import { Component } from 'react';
-import StaffMember from '../components/StaffMember'
+import StaffMember from '../components/StaffMember';
+import Link from 'next/link';
 
 class SectionThree extends Component {
 
@@ -8,7 +9,9 @@ class SectionThree extends Component {
             <div className = "about-section-3-container">
                 <h2 className ="about-section-3-title">Meet The Staff</h2>
                 <div className = "member-container">
-                    <StaffMember image="siami-image" name="Siami" />
+                    <Link href={{pathname:"/about", query: "siami"}}>
+                        <StaffMember image="siami-image" name="Siami" />
+                    </Link>
                 </div>
                 <div className = "member-container member-line-2">
                     <StaffMember image="laechaeh-image" name="Lacheah" />

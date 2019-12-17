@@ -19,18 +19,18 @@
 
 /*Show red border if kept the input empty after touching*/
 .ng-touched.ng-invalid-required {
-    border-color: red;
+    /* border-color: red; */
 }
 /* Show red border when stuff has been typed in, but its invalid */
 .ng-dirty.ng-invalid {
-  border-color: red;
+  /* border-color: red; */
 }
 /*Show normal border color when typed in for the first time*/
 .ng-untouched.ng-invalid {
     border-color: #ccc; 
 }
 .ng-submitted input.ng-invalid{
-    border-color: red;
+    /* border-color: red; */
 }
 
 .contact_dave_image {
@@ -55,7 +55,7 @@ div {
     justify-content:space-around;
     align-items:center;
     border-radius:5px;
-    background-color:blue;
+    background-color:#008CBA;
 }
 
 .contact_us_title {
@@ -95,10 +95,10 @@ input[type='number'] {
     -moz-appearance:textfield;
 }
 
-input::-webkit-outer-spin-button,
+/* input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
     -webkit-appearance: none;
-}
+} */
 
 input:focus {
     border-left:1.5px solid white;
@@ -120,6 +120,7 @@ input::placeholder {
     border:none;
     background-color:rgb(108, 171, 253);
     color:white;
+    outline: none !important;
 }
 
 .contact_page_textarea:focus {
