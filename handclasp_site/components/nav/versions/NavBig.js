@@ -22,7 +22,7 @@ class NavBig extends Component {
                         <Link href="/questions">
                             <DropDownChild text="questions" style="dropdown_menu_item" />
                         </Link>
-                        <Link href="/media">
+                        <Link href="/inprogress" as="/media">
                             <DropDownChild text="media" style="dropdown_menu_item" />
                         </Link>
                     </DropDown>
@@ -31,7 +31,7 @@ class NavBig extends Component {
                         <Button text="projects" style='nav_menu_item' />
                     </Link>
                     <Divider />
-                    <Link href="/involved">
+                    <Link href="/inprogress" as="/getinvolved">
                         <Button text="get involved" style='nav_menu_item' ddDisplay='nav_about_hover_dd2_display' />
                     </Link>
                     <DropDown ddId='dropdown_container_2'>
@@ -41,7 +41,7 @@ class NavBig extends Component {
                         <Link href="/volunteer">
                             <DropDownChild text="volunteers" style="dropdown_menu_item" />
                         </Link>
-                        <Link href="/sponsor">
+                        <Link href="/inprogress" as="/sponsor">
                             <DropDownChild text="sponsor a kid" style="dropdown_menu_item" />
                         </Link>
                     </DropDown>
@@ -49,7 +49,6 @@ class NavBig extends Component {
                     <Link href="/donate">
                         <Button text="donate" style='nav_menu_item' />
                     </Link>
-
                 </div>
             </React.Fragment>
         )
