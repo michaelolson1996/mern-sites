@@ -1,32 +1,6 @@
 import { PureComponent } from 'react';
 
 const Question = (props) => {
-    // constructor(props) {
-    //     super(props)
-    //     this.state = {
-    //         styles: {
-    //             display: 'none'
-    //         }
-    //     }
-    // }
-
-    // onClick = () => {
-    //     if (this.state.styles.display == 'none') {
-    //         this.setState(() => ({
-    //             styles: {
-    //                 display: 'visible',
-    //             }
-    //         }))
-    //     } else {
-    //         this.setState(() => ({
-    //             styles: {
-    //                 display: 'none'
-    //             }
-    //         }))    
-    //     }
-    // }
-
-
     return (
         <React.Fragment>
             <div className="question_answer_container">

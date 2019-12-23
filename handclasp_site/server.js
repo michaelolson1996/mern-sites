@@ -15,13 +15,6 @@ app.prepare()
 
   server.use('/api/email', emailRoute);
 
-  // server.use((err, req, res, next) => {
-  //   if (err.name === "UnauthorizedError") {
-  //       res.status(err.status)
-  //   }
-  //   return res.send({ message: err.message })
-  // })
-
   server.get('*', (req, res) => {
     return handle(req, res)
   })

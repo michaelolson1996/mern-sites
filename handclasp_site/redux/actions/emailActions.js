@@ -2,19 +2,17 @@ import axios from 'axios';
 const emailAxios = axios.create();
 const sendClientMessageURL = ('/api/email');
 
-const returnMessageStatus = () => {
+const returnMessageStatus = (res) => {
     return {
         type: "RETURN_MESSAGE_STATUS",
-        status: 200
+        status: res.data
     }
 }
 
 const sendClientMessage = clientMessage => {
-    console.log(clientMessage)
     return dispatch => {
       return emailAxios.post(sendClientMessageURL, clientMessage).then(res => {
-        console.log(res)
-        dispatch(returnMessageStatus())
+        dispatch(returnMessageStatus(res))
       })
       .catch((error) => {
         console.log(error + "\n hello world I am an error")

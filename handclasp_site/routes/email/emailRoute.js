@@ -11,7 +11,6 @@ router.use(myValidateLogger)
 
 router.route('/')
     .post((req, res) => {
-        console.log(req)
         sendEmail(req, res);
     })
 

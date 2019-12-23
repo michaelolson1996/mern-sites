@@ -1,6 +1,7 @@
-import { Component } from 'react'
-import ContactPage from '../components/contact/sections/ContactPage'
-import LoadingPage from '../components/contact/sections/LoadingPage'
+import { Component } from 'react';
+import ContactPage from '../components/contact/sections/ContactPage';
+import LoadingPage from '../components/contact/sections/LoadingPage';
+
 
 class Contact extends Component{
     constructor(props) {

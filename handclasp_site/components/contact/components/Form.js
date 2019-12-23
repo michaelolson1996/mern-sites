@@ -7,6 +7,7 @@ class Form extends Component {
     constructor(props) {
         super(props)
         this.state = {
+            status: null,
             inputs: {
                 name: '',
                 email: '',
@@ -17,12 +18,24 @@ class Form extends Component {
         }
     }
 
+    componentDidUpdate() {
+        if (this.state.status === null) {
+            this.setState(() => ({
+                status: this.props.emailStatus
+            }))
+        }
+    }
+
     sendClientInfo = () => {
         const { name, email, phone, subject, message } = this.state.inputs;
-        const {dispatch} = this.props;
-        dispatch(sendClientMessage({ name, email, phone, subject, message }))
-        this.props.toggleLoad()
-        this.clearInputs()
+        if (name.length == 0 || email.length == 0 || message.length == 0 || phone.length == 0) {
+            alert("please fill out required information");
+        } else {
+            const {dispatch} = this.props;
+            dispatch(sendClientMessage({ name, email, phone, subject, message }))
+            // this.props.toggleLoad()
+            this.clearInputs()
+        }
     }
 
     clearInputs = () => {
@@ -64,8 +77,8 @@ class Form extends Component {
     // }
 
     render() {
-        console.log(this.state)
         console.log(this.props)
+        console.log(this.state)
         return (
             <form className="form_container">
                 {/* <div className="">
@@ -89,10 +102,10 @@ class Form extends Component {
 
                 <div className="contact_form">
                     <h3 className="contact_us_title">Contact Us!</h3>
-                    <input onChange = { this.handleChange } value = { this.state.inputs.name } className="contact_form_inputs" name="name" type="text" placeholder="full name" required="true" />
-                    <input onChange = { this.handleChange } value = { this.state.inputs.email } className="contact_form_inputs" name="email" type="email" placeholder="email" required="true" />
-                    <input onChange = { this.handleChange } value = { this.state.inputs.phone } className="contact_form_inputs" name="phone" type="number" placeholder="phone" required="true" strict="true" />
-                    <input onChange = { this.handleChange } value = { this.state.inputs.subject } className="contact_form_inputs" name="subject" type="text" placeholder="subject" required="true" />
+                    <input onChange = { this.handleChange } value = { this.state.inputs.name } className="contact_form_inputs" name="name" type="text" placeholder="full name" required={true} />
+                    <input onChange = { this.handleChange } value = { this.state.inputs.email } className="contact_form_inputs" name="email" type="email" placeholder="email" required={true} />
+                    <input onChange = { this.handleChange } value = { this.state.inputs.phone } className="contact_form_inputs" name="phone" type="number" placeholder="phone" required={true} strict="true" />
+                    <input onChange = { this.handleChange } value = { this.state.inputs.subject } className="contact_form_inputs" name="subject" type="text" placeholder="subject" required={true} />
                     <textarea onChange = { this.handleChange } value = { this.state.inputs.message } className="contact_page_textarea" name="message" placeholder="type your message here!" />
                 </div>
                 <Button buttonClass="contact_form_submit_button" text="Submit" onClick={() => this.sendClientInfo()} />
@@ -101,9 +114,9 @@ class Form extends Component {
     }
 }
 
-function mapStateToProps(state) {
+function mapStateToProps(emailStatus) {
     return {
-        state: state
+        emailStatus: emailStatus
     };
  }
 

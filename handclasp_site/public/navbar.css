@@ -223,3 +223,7 @@
     height:50px;
     width:136px;
 }
+
+.nav_dropdown_small_ex:hover {
+    color:rgb(4, 4, 88);
+}

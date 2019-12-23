@@ -9,14 +9,20 @@ class SectionThree extends Component {
             <div className = "about-section-3-container">
                 <h2 className ="about-section-3-title">Meet The Staff</h2>
                 <div className = "member-container">
-                    <Link href={{pathname:"/about", query: "siami"}}>
+                    <Link href="/about/[id]" as={`/about/siami`}>
                         <StaffMember image="siami-image" name="Siami" />
                     </Link>
                 </div>
                 <div className = "member-container member-line-2">
-                    <StaffMember image="laechaeh-image" name="Lacheah" />
-                    <StaffMember image="moosee-image" name="Moosee" />
-                    <StaffMember image="wanida-image" name="Wanida" />
+                    <Link href="/about/[id]" as={`/about/laechaeh`}>
+                        <StaffMember image="laechaeh-image" name="Lacheah" />
+                    </Link>
+                    <Link href="/about/[id]" as={`/about/moosee`}>
+                        <StaffMember image="moosee-image" name="Moosee" />
+                    </Link>
+                    <Link href="/about/[id]" as={`/about/wanida`}>
+                        <StaffMember image="wanida-image" name="Wanida" />
+                    </Link>
                 </div>
                 <div className = "member-container">
                     <StaffMember image="wandaet-image" name="Wandaet" />
