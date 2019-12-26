@@ -1,7 +1,9 @@
 import { Component } from 'react';
 import {connect} from 'react-redux';
 import Button from '../../global/Button';
-import sendClientMessage from '../../../redux/actions/emailActions';
+import sendClientMessage from '../../../redux/actions/sendEmail';
+import verifyEmail from '../../../redux/actions/verifyEmail';
+
 
 class Form extends Component {
     constructor(props) {
@@ -19,24 +21,44 @@ class Form extends Component {
     }
 
     componentDidUpdate() {
-        if (this.state.status === null) {
-            this.setState(() => ({
-                status: this.props.emailStatus
-            }))
-        }
+        // if (this.state.status === null) {
+        //     this.setState(() => ({
+        //         status: this.props.emailStatus
+        //     }))
+        // }
+        // console.log(this.props)
     }
 
-    sendClientInfo = () => {
-        const { name, email, phone, subject, message } = this.state.inputs;
-        if (name.length == 0 || email.length == 0 || message.length == 0 || phone.length == 0) {
-            alert("please fill out required information");
-        } else {
-            const {dispatch} = this.props;
-            dispatch(sendClientMessage({ name, email, phone, subject, message }))
-            // this.props.toggleLoad()
-            this.clearInputs()
-        }
+    handleEmail = () => {
+        this.validateEmail();
     }
+
+    // sendClientInfo = () => {
+    //     if (name.length == 0 || email.length == 0 || message.length == 0 || phone.length == 0) {
+    //         alert("please fill out required information");
+    //     } else {
+    //         const {dispatch} = this.props;
+    //         dispatch(sendClientMessage({ name, email, phone, subject, message }))
+    //         // this.props.toggleLoad()
+    //         this.clearInputs()
+    //     }
+    // }
+
+    validateEmail = () => {
+        const clientEmail = this.state.inputs.email;
+        const {dispatch} = this.props
+        dispatch(verifyEmail({email: clientEmail})).then(() => {
+            if (this.props.validStatus) {
+                const { name, email, phone, subject, message } = this.state.inputs;
+                dispatch(sendClientMessage({ name, email, phone, subject, message }))
+            }
+
+        })
+    }
+
+    // checkInputs = () => {
+    //     if ()
+    // }
 
     clearInputs = () => {
         this.setState({
@@ -78,7 +100,7 @@ class Form extends Component {
 
     render() {
         console.log(this.props)
-        console.log(this.state)
+        // console.log(this.state)
         return (
             <form className="form_container">
                 {/* <div className="">
@@ -108,15 +130,16 @@ class Form extends Component {
                     <input onChange = { this.handleChange } value = { this.state.inputs.subject } className="contact_form_inputs" name="subject" type="text" placeholder="subject" required={true} />
                     <textarea onChange = { this.handleChange } value = { this.state.inputs.message } className="contact_page_textarea" name="message" placeholder="type your message here!" />
                 </div>
-                <Button buttonClass="contact_form_submit_button" text="Submit" onClick={() => this.sendClientInfo()} />
+                <Button buttonClass="contact_form_submit_button" text="Submit" onClick={() => this.handleEmail()} />
             </form>
         )
     }
 }
 
-function mapStateToProps(emailStatus) {
+function mapStateToProps({emailStatus, validStatus}) {
     return {
-        emailStatus: emailStatus
+        emailStatus: emailStatus,
+        validStatus: validStatus
     };
  }
 

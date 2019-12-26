@@ -1,11 +1,12 @@
 const express = require('express')
-const next = require('next')
-const dev = process.env.NODE_ENV !== 'production'
-const port = 3000
-const app = next({ dev })
-const handle = app.getRequestHandler()
-const bodyParser = require('body-parser')
+const next = require('next');
+const dev = process.env.NODE_ENV !== 'production';
+const port = 3000;
+const app = next({ dev });
+const handle = app.getRequestHandler();
+const bodyParser = require('body-parser');
 const emailRoute = require('./routes/email/emailRoute');
+const verifyRoute = require('./routes/email/verifyRoute');
 
 app.prepare()
 .then(() => {
@@ -14,11 +15,11 @@ app.prepare()
   server.use(bodyParser.json());
 
   server.use('/api/email', emailRoute);
+  server.use('/api/verify', verifyRoute)
 
   server.get('*', (req, res) => {
     return handle(req, res)
   })
-
 
   server.listen(port, (err) => {
     if (err) throw err

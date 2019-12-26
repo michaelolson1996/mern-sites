@@ -14,7 +14,7 @@ class SectionThree extends Component {
                     </Link>
                 </div>
                 <div className = "member-container member-line-2">
-                    <Link href="/about/[id]" as={`/about/laechaeh`}>
+                    <Link href="/about/[id]" as={`/about/lachaeh`}>
                         <StaffMember image="laechaeh-image" name="Lacheah" />
                     </Link>
                     <Link href="/about/[id]" as={`/about/moosee`}>
@@ -25,7 +25,9 @@ class SectionThree extends Component {
                     </Link>
                 </div>
                 <div className = "member-container">
+                <Link href="/about/[id]" as={`/about/wandaet`}>
                     <StaffMember image="wandaet-image" name="Wandaet" />
+                </Link>
                 </div>
             </div>
         )

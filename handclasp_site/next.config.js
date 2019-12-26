@@ -4,7 +4,7 @@ module.exports = withCSS({
         return {
             '/': {page: '/'},
             '/donate': {page: '/donate'},
-            '/about': {page: '/about', query: 'siami'},
+            '/about': {page: '/about'},
             '/contact': {page: '/contact'},
             '/questions': {page: '/questions'},
             '/volunteer': {page: '/volunteer'},

@@ -351,7 +351,6 @@
     display:flex;
     align-items:center;
     justify-content:center;
-    /* margin-top:20px; */
 }
 
 .section-4-about-picture {
@@ -379,6 +378,116 @@
     justify-content:center;
     align-items:center;
     cursor:pointer;
+}
+
+.member_about_page {
+    min-height:calc(100vh - 40px);
+    width:100vw;
+    margin-top:40px;
+    border-bottom: 2px solid white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color: white;
+}
+
+.member_about_container {
+    background-color: #008CBA;
+    margin-top:60px;
+    margin-bottom:60px;
+    padding: 50px 10px 50px 10px;
+    /* padding-top:50px;
+    padding-bottom:50px; */
+    color:white;
+    width:90%;
+    height:70%;
+    display:flex;
+    flex-wrap: wrap-reverse;
+    letter-spacing: 1px;
+    font-size: 1.1em;
+}
+
+.member_about_container_one {
+    flex:3;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-width:400px;
+}
+
+.member_about_text_container {
+    width:620px;
+    text-align:center;
+}
+
+.member_about_text_title {
+    margin-bottom:10px;
+}
+
+.member_about_image_container {
+    flex:2;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-width:400px;
+}
+
+.siami_about_image {
+    background-image: url('/static/about_siami_page.jpeg');
+    background-size:300px;
+    background-position-y: -130px;
+    border-radius: 50%;
+    height:300px;
+    width:300px;
+    border:1px solid rgb(29, 27, 27);
+}
+
+.lachaeh_about_image {
+    background-image: url('/static/lacheah_about_image.webp');
+    background-size:330px;
+    background-position-x: -10px;
+    border-radius: 50%;
+    height:300px;
+    width:300px;
+    border:1px solid rgb(29, 27, 27);
+}
+
+.moosee_about_image {
+    background-image: url('/static/about_moosee_image.webp');
+    border-radius: 50%;
+    height:300px;
+    width:300px;
+    border:1px solid rgb(29, 27, 27);
+}
+
+.wanida_about_image {
+    background-image: url('/static/about_wanida_image.webp');
+    background-size:400px;
+    background-position-x: -40px;
+    border-radius: 50%;
+    height:300px;
+    width:300px;
+    border:1px solid rgb(29, 27, 27);
+}
+
+.wandaet_about_image {
+    background-image: url('/static/about_wandaet_image.webp');
+    background-size:450px;
+    background-position-x: -120px;
+    border-radius: 50%;
+    height:300px;
+    width:300px;
+    border:1px solid rgb(29, 27, 27);
+}
+
+.don_kay_about_image {
+    background-image: url('/static/about_don_kay_image.webp');
+    background-size:450px;
+    background-position-x: -100px;
+    border-radius: 50%;
+    height:300px;
+    width:300px;
+    border:1px solid rgb(29, 27, 27);
 }
 
 @media only screen and (max-width:800px) {

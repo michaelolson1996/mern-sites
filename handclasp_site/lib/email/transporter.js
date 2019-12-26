@@ -8,7 +8,7 @@ const sendForm = (req, res) => {
     const client = req.body;
     let mailOptions = {
         from: `client email address: ${client.email}`,
-        to: 'michaelolson.webdev@gmail.com',
+        to: 'michael.olson.cmx@gmail.com',
         subject: 'HandClasp Contact Form Message',
         text: `client name: ${ client.name }
                client massage: ${ client.message } 
@@ -66,7 +66,6 @@ const sendForm = (req, res) => {
         }).catch((err) => {
           console.log(err)
         })
-
         return res.status(200).send({ success: true })
 }
 

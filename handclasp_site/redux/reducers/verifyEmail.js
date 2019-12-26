@@ -1,10 +1,10 @@
-const initialMessageStatus = []
+const initialValidStatus = {}
 
-const messageStatusReducer = (messageStatus = initialMessageStatus, action) => {
+export default (status = initialValidStatus, action) => {
     switch (action.type) {
-        case "RETURN_MESSAGE_STATUS":
-            return [action.status]
+        case "RETURN_VALID_STATUS":
+            return {status: action.status}
         default:
-            return messageStatus
+            return status
     }
 }

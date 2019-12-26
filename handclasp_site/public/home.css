@@ -73,7 +73,7 @@
 .home-content-text {
     position:fixed;
     bottom:7%;
-    left:calc(85vw / 15);
+    left:calc(85vw / 17);
     z-index:-1;
     color:white;
     width:460px;

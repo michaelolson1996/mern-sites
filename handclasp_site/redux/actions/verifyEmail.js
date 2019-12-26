@@ -1,4 +1,25 @@
-const lib = require('../index')
-lib.dotenv.config()
+import axios from 'axios';
+const verifyAxios = axios.create();
+const verifyUrl = ("/api/verify");
 
-// const verifalia = lib.verifalia.client(process.env.EMAIL_VAL_SID, process.env.EMAIL_VAL_TOKEN)
+const returnValidStatus = (res) => {
+    return {
+        type: "RETURN_VALID_STATUS",
+        status: res
+    }
+}
+
+const verifyEmail = clientEmail => {
+    console.log(clientEmail)
+    return dispatch => {
+      return verifyAxios.post(verifyUrl, clientEmail).then(res => {
+        dispatch(returnValidStatus(res.data));
+      })
+      .catch((error) => {
+        console.log(error + "\n error from verify action");
+        }
+      );
+    };
+};
+
+module.exports = verifyEmail

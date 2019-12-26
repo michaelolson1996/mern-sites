@@ -1,5 +1,3 @@
-import { PureComponent } from 'react';
-
 const Question = (props) => {
     return (
         <React.Fragment>
@@ -15,6 +13,5 @@ const Question = (props) => {
         </React.Fragment>
     )
 }
-
 
 export default Question
