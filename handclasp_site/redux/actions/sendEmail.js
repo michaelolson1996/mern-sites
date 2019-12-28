@@ -9,10 +9,17 @@ const returnMessageStatus = (res) => {
     }
 }
 
+const clearMessageStatus = () => {
+  return {
+    type: "CLEAR_MESSAGE_STATUS"
+  }
+}
+
 const sendClientMessage = clientMessage => {
     return dispatch => {
       return emailAxios.post(sendClientMessageURL, clientMessage).then(res => {
         dispatch(returnMessageStatus(res.data.success))
+        dispatch(clearMessageStatus())
       })
       .catch((error) => {
         console.log(error + "\n error from sending email action")
@@ -21,4 +28,6 @@ const sendClientMessage = clientMessage => {
     }
 }
 
-module.exports = sendClientMessage
+module.exports = {
+  sendClientMessage
+} 

@@ -9,11 +9,18 @@ const returnValidStatus = (res) => {
     }
 }
 
+const clearValidStatus = () => {
+  return {
+    type: "CLEAR_VALID_STATUS"
+  }
+}
+
 const verifyEmail = clientEmail => {
     console.log(clientEmail)
     return dispatch => {
       return verifyAxios.post(verifyUrl, clientEmail).then(res => {
         dispatch(returnValidStatus(res.data));
+        dispatch(clearValidStatus())
       })
       .catch((error) => {
         console.log(error + "\n error from verify action");
@@ -22,4 +29,6 @@ const verifyEmail = clientEmail => {
     };
 };
 
-module.exports = verifyEmail
+module.exports = {
+  verifyEmail
+} 

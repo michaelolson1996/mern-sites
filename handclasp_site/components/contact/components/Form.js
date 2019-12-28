@@ -1,64 +1,90 @@
 import { Component } from 'react';
 import {connect} from 'react-redux';
 import Button from '../../global/Button';
-import sendClientMessage from '../../../redux/actions/sendEmail';
-import verifyEmail from '../../../redux/actions/verifyEmail';
-
+import client from '../../../redux/actions/sendEmail';
+import verify from '../../../redux/actions/verifyEmail';
+import Alert from '../../global/Alert'
 
 class Form extends Component {
     constructor(props) {
         super(props)
         this.state = {
-            status: null,
+            alert: {
+                border: 'none',
+                message: ''
+            },
             inputs: {
                 name: '',
                 email: '',
                 phone: '',
                 subject: '',
                 message: ''
+            },
+            status: {
+                isValid: undefined
             }
-        }
-    }
+        };
+    };
 
     componentDidUpdate() {
-        // if (this.state.status === null) {
-        //     this.setState(() => ({
-        //         status: this.props.emailStatus
-        //     }))
-        // }
-        // console.log(this.props)
-    }
+        if (this.props.validStatus.status !== undefined && this.state.status.isValid == undefined) {
+            this.setState(() => ({
+                status: {
+                    isValid: true
+                }
+            }));
+        };
+        
+        if (this.props.emailStatus.status == true && this.state.alert.border !== 'red' && this.state.alert.border !== 'green') {
+            this.setStatusState('green', 'message successfully sent');
+            this.clearInputs();
+        } else if (this.props.emailStatus.status == false && this.state.alert.border !== 'red' && this.state.alert.border !== 'green') {
+            this.setStatusState('red', 'message not sent successfully, please try again or email [email goes here]');
+        };
+    };
 
     handleEmail = () => {
-        this.validateEmail();
-    }
+        if (this.state.alert.border !== 'none') {
+            this.setState(() => ({
+                alert: {
+                    border: 'none',
+                    message: ''
+                }
+            }))
+        }
+        this.checkInputs();
+    };
 
-    // sendClientInfo = () => {
-    //     if (name.length == 0 || email.length == 0 || message.length == 0 || phone.length == 0) {
-    //         alert("please fill out required information");
-    //     } else {
-    //         const {dispatch} = this.props;
-    //         dispatch(sendClientMessage({ name, email, phone, subject, message }))
-    //         // this.props.toggleLoad()
-    //         this.clearInputs()
-    //     }
-    // }
+    checkInputs = () => {
+        const { name, email, phone, subject, message } = this.state.inputs;
+        if (name.length == 0 || email.length == 0 || message.length == 0 || subject.length == 0 || phone.length == 0) {
+            this.setStatusState("orange", "please fill out all required information");
+        } else {
+            this.validateEmail();
+        };
+    };
 
     validateEmail = () => {
         const clientEmail = this.state.inputs.email;
-        const {dispatch} = this.props
-        dispatch(verifyEmail({email: clientEmail})).then(() => {
-            if (this.props.validStatus) {
+        const {dispatch} = this.props;
+        dispatch(verify.verifyEmail({email: clientEmail})).then(() => {
+            if (this.state.status.isValid) {
                 const { name, email, phone, subject, message } = this.state.inputs;
-                dispatch(sendClientMessage({ name, email, phone, subject, message }))
+                dispatch(client.sendClientMessage({ name, email, phone, subject, message }));
+            } else {
+                this.setStatusState("orange", "Please make sure your email is correct");
+            };
+        });
+    };
+
+    setStatusState = (border, message) => {
+        this.setState(() => ({
+            alert: {
+                border: border,
+                message: message
             }
-
-        })
-    }
-
-    // checkInputs = () => {
-    //     if ()
-    // }
+        }));
+    };
 
     clearInputs = () => {
         this.setState({
@@ -69,8 +95,23 @@ class Form extends Component {
                 subject: '',
                 message: ''
             }
-        })
+        });
+    };
+
+    clearAlertState = () => {
+        this.setState(() => ({
+            alert: {
+                border: 'none',
+                message: ''
+            }
+        }))
     }
+
+    returnAlert = (border, message) => {
+        if (this.state.alert.border !== 'none') {
+            return <Alert border={border} message={message} />
+        }
+    };
 
     handleChange = event => {
         const { name, value } = event.target
@@ -82,25 +123,9 @@ class Form extends Component {
         }))
     }
 
-    // handleSubmit = event => {
-    //     event.preventDefault()
-    //     const newReview = {
-    //         name: this.state.name,
-    //         email: this.state.email,
-    //         phone: this.state.phone,
-    //         subject: this.state.subject,
-    //         message: this.state.message
-    //     }
-    //     this.props.postReview(newReview)
-    //     this.props.getReviews()
-    //     .then( () => {
-    //         this.clearInputs()
-    //     })
-    // }
-
     render() {
         console.log(this.props)
-        // console.log(this.state)
+        console.log(this.state)
         return (
             <form className="form_container">
                 {/* <div className="">
@@ -121,7 +146,9 @@ class Form extends Component {
                             }>davep@handclasp.org</p>
                         </div>
                     </div> */}
-
+                {
+                    this.returnAlert(this.state.alert.border, this.state.alert.message)
+                }
                 <div className="contact_form">
                     <h3 className="contact_us_title">Contact Us!</h3>
                     <input onChange = { this.handleChange } value = { this.state.inputs.name } className="contact_form_inputs" name="name" type="text" placeholder="full name" required={true} />
