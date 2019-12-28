@@ -31,7 +31,7 @@
     background-image: url('/static/home_image_1.jpg');
     background-position-y: calc(40vw / -8.7);
     background-position-x: calc(40vw / 1.8);
-    background-size: calc(80vw * 1);
+    background-size: 80vw;
     background-repeat:no-repeat;
     position:fixed;
     top: 60px;
@@ -264,7 +264,7 @@
 
 @media only screen and (max-width:1700px) {
     .background {
-        background-size:calc(100vw / 1.3);
+        /* background-size:calc(100vw / 1.3); */
         background-position-x: calc(30vw);
         /* background-position-y: calc(-2vw * 2); */
     }
@@ -278,24 +278,24 @@
 
 @media only screen and (max-width:1270px) {
     .background {
-        background-size:calc(100vw / 1.2);
+        /* background-size:calc(100vw / 1.2); */
         background-position-x: calc(30vw);
         /* background-position-y: calc(-2vw * 2); */
     }
 
-    .home-content-container {
+    /* .home-content-container {
         height:180vh;
         width:570px;
         background-image:linear-gradient(-82deg, #008CBA, 540px,rgba(0,0,0,0) 0);
-    }
+    } */
 }
 
-/* @media only screen and (max-width: 1366px)
+@media only screen and (max-width: 1366px)
                    and (max-height: 644px) {
     .background {
-        background-size:calc(80vw * 1.8);
-        background-position-x: calc(40vw / 1);
-        background-position-y: calc(40vw / -2.3);
+        /* background-size:calc(80vw * 1.8); */
+        /* background-position-x: calc(40vw / 1);
+        background-position-y: calc(40vw / -2.3); */
     }
 
     .home-content-container {
@@ -305,16 +305,17 @@
     }
 }
 
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 1350px) {
+
     .home-content-container {
-        background-image:linear-gradient(-78deg, #008CBA, calc(96vw / 2.29),rgba(0,0,0,0) 0);
+        height:180vh;
+        width:570px;
+        background-image:linear-gradient(-82deg, #008CBA, 540px,rgba(0,0,0,0) 0);
     }
 
     .background {
-        height:100vh;
         top:60px;
-        background-size:1400px;
-        background-position-x: 200px;
+        background-size:calc(80vw * 1.15);
     }
 
     .home-section-3-quote {
@@ -336,22 +337,14 @@
     }
 
     .background {
-        width:2300px;
         background-position-y: calc(40vw / -8.3);
-        background-position-x: calc(40vw / 1.9);
-        background-size: calc(80vw * 1);
+        background-position-x: 0;
+        background-size: calc(80vw / .8);
     }
 
     .home-section-3-quote {
         width:90%;
         font-size:1.4em;
-    }
-
-    .background {
-        height:100vh;
-        width:2400px;
-        background-position-x: calc(60vw / -7);
-        background-size: calc(180vh);
     }
 
     .home-content-text {
@@ -379,19 +372,23 @@
     }
 }
 
-@media only screen and (max-height: 800px) and (max-width:1100px) {
+@media only screen and (max-height:715px)
+                   and (max-width:1100px) {
     .background {
-        background-size: 1200px;
-        background-position-x: calc(100vw / -10);
-        background-position-y: calc(100vw / -20);
+        background-position-y: calc(40vw / -8.3);
+        background-position-x: 0;
+        background-size: calc(80vw / .8);
     }
-}
 
-@media only screen and (max-width:900px) {
-    .background {
-        background-size: 1100px;
-        background-position-x:calc(100vw / 1600);
-        background-position-y: calc(100vw / -20);
+    .home-content-container {
+        bottom:0;
+        left:0;
+        height:180px;
+        width:100vw;
+        background-image: none;
+        position:fixed;
+        z-index:20;
+        background-color:#008CBA;
     }
 }
 
@@ -414,11 +411,9 @@
     }
 }
 
-@media only screen and (max-width:650px) {
+@media only screen and (max-width:655px) {
     .background {
-        background-size: 1000px;
-        background-position-x:-200px;
-        background-position-y: calc(100vw / -20);
+        background-size: calc(20vw + 100vh);
     }
 }
 
@@ -433,7 +428,7 @@
     .button-link {
         top:20px;
     }
-} */
+}
 
 /* ----------- iPad 1, 2, Mini and Air ----------- */
 
@@ -541,7 +536,7 @@
   and (orientation: portrait)
   and (-webkit-min-device-pixel-ratio: 2) {
     .background {
-        background-size:1600px;
+        /* background-size:1600px; */
         background-position-y:-100px;
     }
 
