@@ -592,7 +592,6 @@
 
 @media only screen and (max-width:640px) {
 
-
     .about-2-container-1 {
         overflow:hidden;
         min-height:500px;
@@ -611,7 +610,6 @@
         overflow:hidden;
         height:100%;
         width:740px;
-        /* background-image: url('../../media/father_and_son.jpg'); */
         background-size:600px 460px;
         background-position:top;
         background-repeat: no-repeat;
@@ -630,7 +628,6 @@
         overflow:hidden;
         height:580px;
         width:760px;
-        /* background-image: url('../../media/karen_girls.jpg'); */
         background-size: 720px 500px;
         background-position-y:calc(100vw / 100);
         background-repeat: no-repeat;

@@ -27,7 +27,7 @@ class NavBig extends Component {
                         </Link>
                     </DropDown>
                     <Divider />
-                    <Link href="/inprogress" as="/projects">
+                    <Link href="/projects">
                         <Button text="projects" style='nav_menu_item' />
                     </Link>
                     <Divider />
@@ -41,7 +41,7 @@ class NavBig extends Component {
                         <Link href="/volunteer">
                             <DropDownChild text="volunteers" style="dropdown_menu_item" />
                         </Link>
-                        <Link href="/inprogress" as="/sponsor">
+                        <Link href="/sponsor">
                             <DropDownChild text="sponsor a kid" style="dropdown_menu_item" />
                         </Link>
                     </DropDown>

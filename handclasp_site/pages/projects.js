@@ -1,11 +1,11 @@
-import { Component } from 'react'
+import SectionOne from '../components/projects/sections/SectionOne';
 
-class Projects extends Component {
-    render() {
-        return (
-            <div></div>
-        )
-    }
+const Projects = () => {
+    return (
+        <div>
+            <SectionOne />
+        </div>
+    )
 }
 
 export default Projects

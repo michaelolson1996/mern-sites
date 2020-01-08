@@ -1,0 +1,99 @@
+.sponsor-page-wrap {
+    height:auto;
+    width:100vw;
+    background-color:#008CBA;
+}
+
+.sponsor-kids-grid {
+    width:100%;
+    padding-top:120px;
+    height:auto;
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    grid-template-rows: max-content;
+    grid-row-gap: 50px;
+    margin:auto;
+    margin-bottom:100px;
+    grid-auto-flow: row;
+    padding-bottom:50px;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+}
+
+.sponsor-kids-outer-container {
+    height:500px;
+    width:450px;
+    justify-self:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.donate-word {
+    position:relative;
+    left:100px;
+}
+
+.sponsor-kids-container {
+    height:400px;
+    width:350px;
+    border:3.4px solid white;
+    background-color:var(--blue);
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+    align-items:center;
+    position:relative;
+    box-shadow:1px 1px 10px rgba(8, 8, 8, 0.588);
+    transition:all .4s ease;
+}
+
+.sponsor-kids-container:hover {
+    transform: rotate(-1deg);
+    box-shadow:1px 4px 14px rgba(8, 8, 8, 0.588);
+    height:410px;
+    width:360px;
+    cursor:pointer;
+}
+
+.sponsor-kids-container:hover > .sponsor-child-image {
+    opacity: 0.8;
+}
+
+.sponsor-kids-container:hover > .text-sponsor-container {
+    opacity:1;
+}
+
+.sponsor-child-image {
+    transition: all .4s ease;
+    position:relative;
+    top:0px;
+    display:inline-block;
+    backface-visibility: hidden;
+}
+
+.text-sponsor-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    color:white;
+    background-color:transparent;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:1.4em;
+    font-weight:600;
+}
+
+.loading-page {
+    height:100vh;
+    width:100vw;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}

@@ -6,6 +6,7 @@
     justify-content:space-around;
     align-items:center;
     flex-wrap:wrap;
+    overflow: hidden;
 }
 
 .contact_dave_info_container {

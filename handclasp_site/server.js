@@ -7,6 +7,8 @@ const handle = app.getRequestHandler();
 const bodyParser = require('body-parser');
 const emailRoute = require('./routes/email/emailRoute');
 const verifyRoute = require('./routes/email/verifyRoute');
+const getProjects = require('./routes/projects/getProjects');
+const getChildren = require('./routes/projects/getChildren');
 
 app.prepare()
 .then(() => {
@@ -15,7 +17,9 @@ app.prepare()
   server.use(bodyParser.json());
 
   server.use('/api/email', emailRoute);
-  server.use('/api/verify', verifyRoute)
+  server.use('/api/verify', verifyRoute);
+  server.use('/api/projects', getProjects);
+  server.use('/api/children', getChildren)
 
   server.get('*', (req, res) => {
     return handle(req, res)

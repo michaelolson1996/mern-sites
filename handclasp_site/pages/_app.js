@@ -13,6 +13,7 @@ import '../public/inprogress.css';
 import '../public/questions.css';
 import '../public/footer.css';
 import '../public/contact.css';
+import '../public/sponsor.css';
 
 class MyApp extends App {
 
