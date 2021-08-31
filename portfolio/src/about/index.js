@@ -17,7 +17,6 @@ const About = () => {
                             <p className = "thomas-jefferson">Thomas A. Jefferson</p>
                         </div>
                     </div>
-                    {/* <i class="fas fa-angle-down"></i> */}
                 </div>
 
                 
